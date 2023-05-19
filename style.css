@@ -13,18 +13,16 @@ body{
     background-color: #0081FD;
 }
 
-.header{
+.header nav{
     background-color: #FFFFFF;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    height: 100px;
+    height: 80px;
     padding: 5px 10%;
+    justify-content: space-between;
 }
-
 .header .logo{
     display: flex;
-    justify-content: space-between;
     cursor: pointer;
 }
 
@@ -76,4 +74,43 @@ body{
     background-color: #FFFFFF;
     color: #0081FD;
     transform: scale(1.1);
+}
+/* Carrousel */
+.carousel-item img {
+    width: 100%; 
+    height: 860px;
+    object-fit: cover;
+  }
+
+/* Nosotros */
+.nosotros{
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    padding: 50px 10%;
+}
+.nosotros .nosotros-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.nosotros img {
+    width: 100%; 
+    height: 557px;
+    object-fit: cover;  
+}
+
+/* testimonios */
+.testimonios{
+    background-color: #0081FD;
+    padding: 200px;
+}
+
+.testimonios img{
+    height: 100px;
+    width: 100px;
+}
+.testimonios .card{
+    font-size: 700;
+    background-color: #0081FD;
+    border: 10px solid #FFFFFF;
 }
