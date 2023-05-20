@@ -21,6 +21,9 @@ body{
     padding: 5px 10%;
     justify-content: space-between;
 }
+.header ul{
+    padding:15px 0px 0px 0px;
+}
 .header .logo{
     display: flex;
     cursor: pointer;
@@ -50,7 +53,7 @@ body{
 }
 
 .header .nav_links a{
-    font-size: 700;
+    font-weight: 700;
     color: #0081FD;
     text-decoration: none;
 }
@@ -63,8 +66,8 @@ body{
     font-weight: 700;
     color: #FFFFFF;
     padding: 9px 25px;
-    background: #0081FD;
-    border-color: #135A75;
+    background-color: #0081FD;
+    border: 2px solid #135A75;
     border-radius: 20px;
     cursor: pointer;
     transition: all 0.3s ease 0s;
@@ -113,4 +116,22 @@ body{
     font-size: 700;
     background-color: #0081FD;
     border: 10px solid #FFFFFF;
+}
+/* Por que elegirnos */
+.elegirnos {
+    background-color: #FFFFFF;
+}
+.elegirnos img{
+    width: 550px; 
+    height: 550px;
+    object-fit: cover; 
+}
+
+/* Footer */
+.footer {
+    background-image:url("img/Footer.png");
+    background-repeat: no-repeat;
+    background-size: 1900px 666px;
+    background-position: center;
+
 }
