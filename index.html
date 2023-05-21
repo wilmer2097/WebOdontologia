@@ -9,18 +9,50 @@
     <title>Inicio</title>
 </head>
 <body>
-    <header class="header">
-            <nav>
-            <div class="logo">
-                <img src="img/logo.png" alt="logo">
-            </div>
-                <ul class="nav_links">
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="especialidades.html">Especialidades</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                </ul>
-                <a href="#" class="btn"><button>Reservar Cita</button></a>
-            </nav>
+  <header class="header ">
+  <nav class="navbar bg-body-tertiary  navbar-expand-lg fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand ps-3" href="index.html"> 
+          <img cclass="img-fluid" width="230" src="img/logo.png" alt="logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"  href="especialidades.html">Especialidades</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"  href="contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+          </ul>
+          <a href="#" class="btn"><button class="btn btn-primary ">Reservar Cita</button></a>
+        </div>
+      </div>
+    </div>
+  </nav>
             
     </header>
     <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
@@ -154,10 +186,10 @@
         </div>
       </section>
       <section>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2758.8311531084996!2d-77.11169407490324!3d-12.072615415524186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105cbdb9b09a86d%3A0x9718d1b31e1548ec!2sOdontolog%C3%ADa%20Est%C3%A9tica%20E%20Integral%20%C3%91ingle!5e0!3m2!1ses-419!2spe!4v1684524232091!5m2!1ses-419!2spe" width="1900" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2758.8311531084996!2d-77.11169407490324!3d-12.072615415524186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105cbdb9b09a86d%3A0x9718d1b31e1548ec!2sOdontolog%C3%ADa%20Est%C3%A9tica%20E%20Integral%20%C3%91ingle!5e0!3m2!1ses-419!2spe!4v1684524232091!5m2!1ses-419!2spe" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </section>
       <footer>
-        <div class="d-flex flex-row-reverse mb-2 footer">
+        <div class="d-flex flex-row-reverse footer">
         <div class="datos p-2">
         <ul>
           <li>
