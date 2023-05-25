@@ -11,7 +11,7 @@ counters.forEach(counter => {
             counter.innerText = Math.ceil(data + time);
             setTimeout(animate, 1);
         } else {
-            counter.innerHtml = `<h2>` + value + `</h2>`;
+            counter.innerHtml = `<h3>` + value + `</h3>`;
         }
 
     }

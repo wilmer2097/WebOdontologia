@@ -86,6 +86,13 @@ header .nav-item .nav-link {
     background-position: center;
     height: 160px;
 }
+.nada {
+    background-image: url("img/reservarCita.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 160px;
+}
 .nosotros{
     font-family: 'Lexend', sans-serif;
     color: #1E66AA;
