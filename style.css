@@ -101,6 +101,11 @@ header .nav-item .nav-link {
     display: flex;
     flex-wrap: wrap;
 }
+.nosotros .descripcion{
+    font-family: 'Lexend', sans-serif;
+    font-weight: 400px;
+    color: #7a7a7a;
+}
 
 
 /* testimonios */
@@ -127,12 +132,17 @@ header .nav-item .nav-link {
 }
 /* Por que elegirnos */
 .elegirnos {
+    font-family: 'Lexend', sans-serif;
     background-color: #FFFFFF;
 }
-.elegirnos img{
-    width: 550px; 
-    height: 550px;
-    object-fit: cover; 
+.elegirnos .titulo{
+    font-weight: 700px;
+    color: #1E66AA;
+}
+.elegirnos .descripcion{
+    font-family: 'Lexend', sans-serif;
+    font-weight: 400px;
+    color: #7a7a7a;
 }
 
 /* Footer */
