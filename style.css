@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;600&family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400;700&family=Roboto:wght@400;700&display=swap');
 
 *{
     box-sizing: border-box;
@@ -32,12 +32,16 @@ header .nav-item .nav-link {
 }
 
 .header .nav-link li{
+    font-family: 'Roboto', sans-serif;
     display: inline-block;
     padding: 0 20px;
 }
 
 .header .nav-item .nav-link:hover{
     transform: scale(1.1);
+}
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: #0081FD;
 }
 
 .header .nav-link{
@@ -51,6 +55,7 @@ header .nav-item .nav-link {
 }
 
 .header .btn button{
+    font-family: 'Roboto', sans-serif;
     font-weight: 700;
     color: #FFFFFF;
     padding: 9px 25px;
@@ -69,39 +74,54 @@ header .nav-item .nav-link {
 /* Carrousel */
 .carousel-item img {
     width: 100%; 
-    height: 860px;
+    height: 940px;
     object-fit: cover;
   }
 
-/* Nosotros */
+/* Linea */
+.linea {
+    background-image:url("img/linea.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 160px;
+}
 .nosotros{
+    font-family: 'Lexend', sans-serif;
+    color: #1E66AA;
     background-color: #FFFFFF;
     display: flex;
     justify-content: center;
     padding: 50px 10%;
 }
+.nosotros .titulo{
+    font-weight: 700px;
+}
 .nosotros .nosotros-container{
     display: flex;
     flex-wrap: wrap;
 }
-.nosotros img {
-    width: 100%; 
-    height: 557px;
-    object-fit: cover;  
-}
+
 
 /* testimonios */
 .testimonios{
     background-color: #0081FD;
-    padding: 200px;
+    padding: 0px 150px 150px 150px;;
 }
-
+.testimonios .titulo{
+    font-family: 'Lexend', sans-serif;
+    font-weight: 700px;
+    padding: 100px 0px 75px 0px;
+}
 .testimonios img{
     height: 100px;
     width: 100px;
 }
 .testimonios .card{
-    font-size: 700;
+    margin: 0px 200px 0px 200px;
+    font-family: 'Lexend', sans-serif;
+    height: 261px;
+    width: auto;
     background-color: #0081FD;
     border: 10px solid #FFFFFF;
 }
