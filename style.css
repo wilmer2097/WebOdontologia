@@ -145,6 +145,35 @@ header .nav-item .nav-link {
     color: #7a7a7a;
 }
 
+/* contadores */
+.estadisticas {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+      background: #0081FD;
+    height: 450px;
+  }
+  
+  .value {
+    font-size: 150px;
+    display: block;
+    font-weight: bold;
+    color: #FFFFFF;
+  }
+
+/* detalles */
+.detalles .izquierda{
+    width: 50%;
+    height: 470px;
+    background-color: #1E66AA;
+}
+.detalles .derecha{
+    width: 50%;
+    height: 470px;
+    background-color: #FFFFFF;;
+}
+
+
 /* Footer */
 .footer {
     background-image:url("img/Footer.png");
