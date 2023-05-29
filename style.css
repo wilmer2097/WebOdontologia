@@ -78,21 +78,6 @@ header .nav-item .nav-link {
     object-fit: cover;
   }
 
-/* Linea */
-.linea {
-    background-image:url("img/linea.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 160px;
-}
-.nada {
-    background-image: url("img/reservarCita.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 160px;
-}
 .nosotros{
     font-family: 'Lexend', sans-serif;
     color: #1E66AA;
@@ -151,30 +136,39 @@ header .nav-item .nav-link {
     font-weight: 400px;
     color: #7a7a7a;
 }
+.elegirnos img{
+    width: 737px;
+    height: 738px;
+}
 
 /* contadores */
 .estadisticas {
     display: flex;
     justify-content: space-around;
     align-items: center;
-      background: #0081FD;
+    background: #0081FD;
     height: 450px;
   }
   
   .value {
-    font-size: 150px;
-    display: block;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    background: #FFFFFF;
+    font-size: 80px;
     font-weight: bold;
-    color: #FFFFFF;
+    color: #1E66AA;
+    margin-bottom: 50px;
   }
 
 /* detalles */
 .detalles .izquierda{
     width: 50%;
     height: 470px;
-    background-color: #1E66AA;
+    background-color: #0081FD;
 }
 .detalles .derecha{
+    color: #1E66AA;
     width: 50%;
     height: 470px;
     background-color: #FFFFFF;;
@@ -182,16 +176,20 @@ header .nav-item .nav-link {
 
 
 /* Footer */
-.footer {
-    background-image:url("img/Footer.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 666px;
+.footerimg{
+    width: 100%;
+    margin: -500px 0px -700px 0px;
+}
+.footer{
+    margin-top: -90px;
 }
 
 
 /* Especialidades */
+.especialidades{
+    background-color: #0081FD;
+    margin-top: 100px;
+}
 
 .wrapper {
     height: 400px;
@@ -287,5 +285,6 @@ header .nav-item .nav-link {
 }
 
 .reservarCita{
+    background-color: #0081FD;
     padding-top: 100px;
 }
