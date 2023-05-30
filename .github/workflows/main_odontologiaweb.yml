@@ -58,3 +58,6 @@ jobs:
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_95D54EB5F1754263A02E7633AAC20C95 }}
           package: .
+
+      - name: Set webapp URL output
+        run: echo "webapp-url=${{ steps.deploy-to-webapp.outputs.webapp-url }}" >> $GITHUB_ENV
