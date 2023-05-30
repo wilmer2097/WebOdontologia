@@ -167,7 +167,7 @@
             </div>
     </section>
     <section id="elegirnos">
-      <div class="elegirnos d-flex flex-row">
+      <div class="elegirnos d-flex flex-row align-items-center">
         <div>
           <img src="img/inicio1.svg" alt="">
         </div>
@@ -175,7 +175,7 @@
           <div class="titulo">
             <h2 class="fw-bold pb-5 text-center">¿Por Qué Elegirnos?</h2>
           </div>
-          <div class="px-5">
+          <div class="px-5 p-5">
             <p class="descripcion fst-light text-center">"Si está buscando una odontóloga con experiencia, atención garantizada y un enfoque personalizado, ¡no
               busque más! Como la primera odontóloga de la zona, Gloria María Ñingle Mansilla ha estado ayudando a
               pacientes a lograr sonrisas saludables y hermosas durante más de 20 años. Su enfoque en la atención
@@ -208,14 +208,14 @@
     </section>
     <section class="detalles">
       <div class="d-flex flex-row">
-        <div class="izquierda d-flex justify-content-center flex-column text-center">
-          <img src="" alt="">
+        <div class="izquierda d-flex justify-content-center flex-column text-center pt-5">
+          <i class="fa-solid fa-calendar-days fa-2xl" style="color: #ffffff;"></i>
           <h2 class="text-white p-5">Horarios De Atención</h2>
           <h5 class="text-white p-5">Todos los días</h5>
           <a class="text-white p-5" href="#"><button class="btn btn-outline-dark">RESERVAR CITA</button></a>
         </div>
-        <div class="derecha d-flex text-center justify-content-center flex-column">
-          <img src="" alt="">
+        <div class="derecha d-flex text-center justify-content-center flex-column pt-5">
+          <i class="fa-solid fa-location-dot fa-2xl" style="color: #1e66aa;"></i>
           <h2 class="p-5">Encuentranos En</h2>
           <h5 class="p-5">CALLE VALENCIA 102 DPTO. 203 URB LA MACARENA LA PERLA CALLAO, Lima, Peru</h3>
           <a class="p-5" href="#"><button class="btn btn-outline-dark">OBTENER DIRECCIÓN</button></a>

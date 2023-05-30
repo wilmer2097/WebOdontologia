@@ -156,7 +156,8 @@ header .nav-item .nav-link {
     padding: 50px 20px;
     justify-content: space-around;
     align-items: center;
-    background: #0081FD;
+    background: rgb(0,129,253);
+    background: linear-gradient(0deg, rgba(0,129,253,1) 0%, rgba(30,102,170,1) 100%);;
   }
   
   .value {
@@ -261,7 +262,7 @@ header .nav-item .nav-link {
     width: 150px;
     padding: 5px;
     border-radius: 50%;
-    background: linear-gradient(375deg, #0081FD, #135A75);
+    background: linear-gradient(375deg, #0081FD, #1E66AA);
 }
 
 .wrapper .back-face .info {
