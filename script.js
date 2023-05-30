@@ -18,3 +18,18 @@ counters.forEach(counter => {
 
     animate();
 });
+
+
+$(document).ready(function(){
+    $('.carousel').slick({
+      autoplay: true,
+      autoplaySpeed: 3000,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      infinite: true,
+      dots: false,
+      arrows: false,
+      pauseOnHover: false,
+      pauseOnFocus: false
+    });
+  });
