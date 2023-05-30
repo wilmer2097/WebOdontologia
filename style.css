@@ -1,25 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400;700&family=Roboto:wght@400;700&display=swap');
 
-*{
-    box-sizing: border-box;
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #ededed;
     margin: 0;
     padding: 0;
-    font-family: 'League Spartan', sans-serif;
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-}
+    font-family: 'Lexend', sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+  }
 
-body{
-    background-color: #ededed;
-}
-
+/* Encabezado */
 header .nav-item .nav-link {
     line-height: 3;
 }
 
 .header .logo img{
-    height: 70px;
-    width: auto;
+    height: auto;
+    max-width: 100%;
     transition: all 0.3s;
 }
 
@@ -27,17 +29,23 @@ header .nav-item .nav-link {
     transform: scale(1.2);
 }
 
-.header .nav-link{
-    list-style: none;
+.header .nav-link{  
+    list-style: none;   
 }
 
 .header .nav-link li{
-    font-family: 'Roboto', sans-serif;
     display: inline-block;
-    padding: 0 20px;
+    padding: 0 10px;
 }
+.header .nav-link a {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: #0081FD;
+    text-decoration: none;
+  }
 
 .header .nav-item .nav-link:hover{
+    color: #1E66AA;
     transform: scale(1.1);
 }
 .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
@@ -50,17 +58,13 @@ header .nav-item .nav-link {
     text-decoration: none;
 }
 
-.header .nav-link li a:hover{
-    color: #135A75;
-}
-
 .header .btn button{
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     color: #FFFFFF;
     padding: 9px 25px;
     background-color: #0081FD;
-    border: 2px solid #135A75;
+    border: 2px solid #1E66AA;
     border-radius: 20px;
     cursor: pointer;
     transition: all 0.3s ease 0s;
@@ -71,6 +75,7 @@ header .nav-item .nav-link {
     color: #0081FD;
     transform: scale(1.1);
 }
+
 /* Carrousel */
 .carousel-item img {
     width: 100%; 
@@ -78,7 +83,8 @@ header .nav-item .nav-link {
     object-fit: cover;
   }
 
-.nosotros{
+/* Nosotros */
+.nosotros{  
     font-family: 'Lexend', sans-serif;
     color: #1E66AA;
     background-color: #FFFFFF;
@@ -87,7 +93,7 @@ header .nav-item .nav-link {
     padding: 50px 10%;
 }
 .nosotros .titulo{
-    font-weight: 700px;
+    font-weight: 700;
 }
 .nosotros .nosotros-container{
     display: flex;
@@ -95,10 +101,16 @@ header .nav-item .nav-link {
 }
 .nosotros .descripcion{
     font-family: 'Lexend', sans-serif;
-    font-weight: 400px;
+    font-weight: 400;
     color: #7a7a7a;
 }
 
+.texto{
+    font-family: 'Lexend', sans-serif;
+    font-weight: 700px;
+    background-color: #0081FD;
+    margin-bottom: -10px;
+}
 
 /* testimonios */
 .testimonios{
@@ -128,26 +140,23 @@ header .nav-item .nav-link {
     background-color: #FFFFFF;
 }
 .elegirnos .titulo{
-    font-weight: 700px;
+    font-family: 'Lexend', sans-serif;
+    font-weight: 700;
     color: #1E66AA;
 }
 .elegirnos .descripcion{
     font-family: 'Lexend', sans-serif;
-    font-weight: 400px;
+    font-weight: 400;
     color: #7a7a7a;
 }
-.elegirnos img{
-    width: 737px;
-    height: 738px;
-}
 
-/* contadores */
+/* estadisticas */
 .estadisticas {
     display: flex;
+    padding: 50px 20px;
     justify-content: space-around;
     align-items: center;
     background: #0081FD;
-    height: 450px;
   }
   
   .value {
@@ -155,10 +164,10 @@ header .nav-item .nav-link {
     justify-content: center;
     border-radius: 10px;
     background: #FFFFFF;
-    font-size: 80px;
+    font-size: 60px;
     font-weight: bold;
     color: #1E66AA;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
   }
 
 /* detalles */
@@ -182,6 +191,17 @@ header .nav-item .nav-link {
 }
 .footer{
     margin-top: -90px;
+}
+
+.footer ul{
+    list-style: none;
+}
+
+.footer a{
+    font-family: 'Lexend', sans-serif;
+    font-weight: 400;
+    list-style: none;
+    text-decoration: none;
 }
 
 
@@ -288,3 +308,10 @@ header .nav-item .nav-link {
     background-color: #0081FD;
     padding-top: 100px;
 }
+
+/* Media Queries */
+
+@media only screen and (max-width: 768px) {
+  
+
+  }
