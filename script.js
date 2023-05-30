@@ -33,3 +33,5 @@ $(document).ready(function(){
       pauseOnFocus: false
     });
   });
+
+AOS.init();

@@ -191,6 +191,7 @@ header .nav-item .nav-link {
     margin: -500px 0px -700px 0px;
 }
 .footer{
+    margin-right: 200px;
     margin-top: -90px;
 }
 
@@ -308,6 +309,17 @@ header .nav-item .nav-link {
 .reservarCita{
     background-color: #0081FD;
     padding-top: 100px;
+}
+
+/* Contacto */
+.contacto{
+    padding-top: 100px;
+    background-color: #FFFFFF;
+}
+
+.contacto .contacto_container{
+    background-color: #0081FD;
+    margin: 86px;
 }
 
 /* Media Queries */
