@@ -115,7 +115,7 @@ header .nav-item .nav-link {
 /* testimonios */
 .testimonios{
     background-color: #0081FD;
-    padding: 0px 150px 150px 150px;;
+    /* padding: 0px 150px 150px 150px; */
 }
 .testimonios .titulo{
     font-family: 'Lexend', sans-serif;
@@ -127,7 +127,7 @@ header .nav-item .nav-link {
     width: 100px;
 }
 .testimonios .card{
-    margin: 0px 200px 0px 200px;
+    /* margin: 0px 200px 0px 200px; */
     font-family: 'Lexend', sans-serif;
     height: 261px;
     width: auto;
@@ -174,12 +174,12 @@ header .nav-item .nav-link {
 /* detalles */
 .detalles .izquierda{
     height: 470px;
-    background-color: #0081FD;
+    background-color: #FFFFFF;
+    color: #1E66AA;
 }
 .detalles .derecha{
-    color: #1E66AA;
     height: 470px;
-    background-color: #FFFFFF;;
+    background-color: #0081FD;;
 }
 
 
