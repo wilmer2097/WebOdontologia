@@ -173,13 +173,11 @@ header .nav-item .nav-link {
 
 /* detalles */
 .detalles .izquierda{
-    width: 50%;
     height: 470px;
     background-color: #0081FD;
 }
 .detalles .derecha{
     color: #1E66AA;
-    width: 50%;
     height: 470px;
     background-color: #FFFFFF;;
 }
