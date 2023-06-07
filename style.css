@@ -208,6 +208,10 @@ header .nav-item .nav-link {
     background: #0081FD;
 }
 
+.footer ul {
+    list-style: none;
+}
+
 .footer_datos img {
     width: 250px;
 }
