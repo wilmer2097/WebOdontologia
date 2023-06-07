@@ -1,23 +1,35 @@
 const counters = document.querySelectorAll('.value');
 const speed = 200;
 
-counters.forEach(counter => {
-    const animate = () => {
-        const value = +counter.getAttribute('akhi');
-        const data = +counter.innerText;
+function animateCounter() {
+  counters.forEach(counter => {
+    const rect = counter.getBoundingClientRect();
+    const windowHeight = window.innerHeight;
 
-        const time = value / speed;
+    if (rect.top < windowHeight && counter.getAttribute('data-visible') === 'false') {
+      counter.setAttribute('data-visible', 'true');
+      const value = +counter.getAttribute('akhi');
+      const suffix = counter.getAttribute('suffix');
+      const increment = Math.ceil(value / (speed));
+      let data = 0;
+
+      function updateCounter() {
         if (data < value) {
-            counter.innerText = Math.ceil(data + time);
-            setTimeout(animate, 1);
+          data = Math.min(data + increment, value);
+          counter.innerText = `${data}${suffix}`;
+          requestAnimationFrame(updateCounter);
         } else {
-            counter.innerHtml = `<h3>` + value + `</h3>`;
+          counter.innerHTML = `${value}${suffix}`;
         }
+      }
 
+      updateCounter();
     }
+  });
+}
 
-    animate();
-});
+window.addEventListener('scroll', animateCounter);
+animateCounter();
 
 
 $(document).ready(function(){
