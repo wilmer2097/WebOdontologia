@@ -14,6 +14,10 @@ body {
     line-height: 1.5;
   }
 
+.text-justify {
+    text-align: justify;
+}
+  
 /* Encabezado */
 header .nav-item .nav-link {
     line-height: 3;
@@ -77,6 +81,11 @@ header .nav-item .nav-link {
 }
 
 /* Carrousel */
+
+#carouselExampleInterval {
+    margin-top: 100px;
+}
+
 .carousel-item img {
     width: 100%; 
     height: 940px;
@@ -113,6 +122,11 @@ header .nav-item .nav-link {
 }
 
 /* testimonios */
+
+#carouselOpiniones {
+    max-width: 800px;
+}
+
 .testimonios{
     background-color: #0081FD;
     /* padding: 0px 150px 150px 150px; */
@@ -129,7 +143,7 @@ header .nav-item .nav-link {
 .testimonios .card{
     /* margin: 0px 200px 0px 200px; */
     font-family: 'Lexend', sans-serif;
-    height: 261px;
+    height: 350px;
     width: auto;
     background-color: #0081FD;
     border: 10px solid #FFFFFF;
@@ -184,25 +198,33 @@ header .nav-item .nav-link {
 
 
 /* Footer */
-.footerimg{
-    width: 100%;
-    margin: -500px 0px -700px 0px;
-}
+
 .footer{
-    margin-right: 200px;
-    margin-top: -90px;
+    background: #0081FD;
 }
 
-.footer ul{
-    list-style: none;
+.footer_datos img {
+    width: 250px;
 }
 
-.footer a{
-    font-family: 'Lexend', sans-serif;
-    font-weight: 400;
-    list-style: none;
-    text-decoration: none;
-}
+.footer_datos {
+    background-color: #fff;
+    border-radius: 50%;
+    height: 150px;
+    max-width: 700px;
+    padding: 20px;
+    text-align: center;
+  }
+  @media(min-width: 768px){
+    .footer_datos img {
+      width: 250px;
+    }
+    .footer_datos {
+      height: 343px;
+  }
+  
+  }
+
 
 
 /* Especialidades */
@@ -310,12 +332,20 @@ header .nav-item .nav-link {
 }
 
 /* Contacto */
-.contacto{
-    padding-top: 100px;
-    background-color: #FFFFFF;
-}
-
-.contacto .contacto_container{
+.contacto_container {
     background-color: #0081FD;
     margin: 86px;
+    box-shadow: 19px 6px 34px 0px #000000a8;
 }
+@media(max-width: 768px){
+    .contacto_container{
+        margin: 0px;
+    }
+  }
+
+.contacto {
+    padding-top: 100px;
+    background-color: #FFFFFF;
+    padding-bottom: 50px;
+}
+
