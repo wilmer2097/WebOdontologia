@@ -136,14 +136,19 @@ header .nav-item .nav-link {
     font-weight: 700px;
     padding: 100px 0px 75px 0px;
 }
+.card-body {
+    padding: 0;
+    margin: 0;
+  }
+
 .testimonios img{
-    height: 100px;
-    width: 100px;
+    height: 330px;
+    width: 700px;
 }
 .testimonios .card{
     /* margin: 0px 200px 0px 200px; */
     font-family: 'Lexend', sans-serif;
-    height: 350px;
+    height: auto;
     width: auto;
     background-color: #0081FD;
     border: 10px solid #FFFFFF;
