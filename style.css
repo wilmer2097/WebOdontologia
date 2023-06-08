@@ -203,8 +203,12 @@ header .nav-item .nav-link {
 
 
 /* Footer */
+.ondas{
+    height: 100px;
+    margin-top: 0px;
+}
 
-.footer{
+footer{
     background: #0081FD;
 }
 
