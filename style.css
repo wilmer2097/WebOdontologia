@@ -176,7 +176,7 @@ header .nav-item .nav-link {
     justify-content: space-around;
     align-items: center;
     background: rgb(0,129,253);
-    background: linear-gradient(0deg, rgba(0,129,253,1) 0%, rgba(30,102,170,1) 100%);;
+    background: linear-gradient(0deg, rgba(30,102,170,1) 0%, rgba(0,129,253,1) 100%);;
   }
   
   .value {
