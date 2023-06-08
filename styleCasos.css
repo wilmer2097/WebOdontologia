@@ -83,7 +83,7 @@ header .nav-item .nav-link {
 
 .main{
     padding-top: 100px;
-    background-color: #1E66AA;
+    
 }
 
 html {
@@ -266,4 +266,8 @@ html {
     border: solid #5D5D5D;
     border-width: 0 2px 2px 0;
     transform: rotate(135deg);
+  }
+
+  .sliders{
+    background-color: #1E66AA;
   }
