@@ -6,7 +6,7 @@ html{
 }
 
 body {
-    background-color: #ededed;
+    background-color: #0081FD;
     margin: 0;
     padding: 0;
     font-family: 'Lexend', sans-serif;
@@ -176,7 +176,7 @@ header .nav-item .nav-link {
     justify-content: space-around;
     align-items: center;
     background: rgb(0,129,253);
-    background: linear-gradient(0deg, rgba(30,102,170,1) 0%, rgba(0,129,253,1) 100%);;
+    background: linear-gradient(0deg, rgba(30,102,170,1) 0%, rgba(0,129,253,1) 100%);
   }
   
   .value {
@@ -204,12 +204,13 @@ header .nav-item .nav-link {
 
 /* Footer */
 .ondas{
-    height: 100px;
-    margin-top: 0px;
+    height: 100%;
+    margin-top: -140px;
 }
 
 footer{
-    background: #0081FD;
+  background: rgb(0,129,253);
+  background: linear-gradient(0deg, rgba(30,102,170,1) 0%, rgba(0,129,253,1) 100%);
 }
 
 .footer ul {
@@ -221,6 +222,7 @@ footer{
 }
 
 .footer_datos {
+    color: #1E66AA;
     background-color: #fff;
     border-radius: 50%;
     height: 150px;
@@ -238,6 +240,65 @@ footer{
   
   }
 
+  /*onda*/  
+  .flex { /*Flexbox for containers*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .waves {
+    position:relative;
+    width: 100%;
+    height:15vh;
+    margin-top: -13px;
+    margin-bottom:-7px; /*Fix for safari gap*/
+    min-height:180px;
+    max-height:250px;
+  }
+  
+  /* Animation */
+  
+  .parallax > use {
+    animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+  }
+  .parallax > use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 7s;
+  }
+  .parallax > use:nth-child(2) {
+    animation-delay: -3s;
+    animation-duration: 10s;
+  }
+  .parallax > use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 13s;
+  }
+  .parallax > use:nth-child(4) {
+    animation-delay: -5s;
+    animation-duration: 20s;
+  }
+  @keyframes move-forever {
+    0% {
+     transform: translate3d(-90px,0,0);
+    }
+    100% { 
+      transform: translate3d(85px,0,0);
+    }
+  }
+  /*Shrinking for mobile*/
+  @media (max-width: 768px) {
+    .waves {
+      padding-top: 0px;
+      height:100px;
+      min-height:100px;
+    }
+    h1 {
+      font-size:24px;
+    }
+  }
+  
 
 
 
