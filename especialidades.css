@@ -1,8 +1,26 @@
+/* ------------ GOOGLE FONTS ------------ */
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400;700&family=Roboto:wght@400;700&display=swap');
 
 
 html {
     scroll-behavior: smooth;
+}
+
+/* ------------ VARIABLES ------------ */
+:root {
+    /* FONT */
+    --font: 'Lexend', sans-serif;
+
+    /* COLORS */
+    --color: #9176FF;
+    --bg-color: #f4f4f4;
+}
+
+/* ------------ BASE ------------ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -15,11 +33,16 @@ body {
 
 }
 
+
 .text-justify {
     text-align: justify;
 }
 
+
+
 /* Encabezado */
+
+
 header .nav-item .nav-link {
     line-height: 3;
 }
@@ -85,63 +108,11 @@ header .nav-item .nav-link {
 }
 
 
-
-
-
-/* Footer */
-
-.footer {
-    background: #0081FD;
-}
-
-.footer ul {
-    list-style: none;
-}
-
-.footer_datos img {
-    width: 250px;
-}
-
-.footer_datos {
-    background-color: #fff;
-    border-radius: 50%;
-    height: 150px;
-    max-width: 700px;
-    padding: 20px;
-    text-align: center;
-}
-
-@media(min-width: 768px) {
-    .footer_datos img {
-        width: 250px;
-    }
-
-    .footer_datos {
-        height: 343px;
-    }
-
-}
-
-
-/* Especialidades */
-
-
-.expertos {
-    display: flex;
-    padding-top: 30px;
-    background-color: #FFFFFF;
-    justify-content: center;
-}
-
-.reservarCita {
-    background-color: #0081FD;
-    padding-top: 100px;
-}
-
-
 /* ----------- SLIDER ------------ */
 .swiper {
-    width: 50%;
+    width: 100%;
+
+    margin-top: 100px;
 }
 
 .swiper-wrapper {
@@ -149,11 +120,10 @@ header .nav-item .nav-link {
     height: 35em;
     display: flex;
     align-items: center;
-    border: 1px solid #0081FD;
 }
 
 .card {
-    width: 10em;
+    width: 20em;
     height: 90%;
     background-color: #fff;
     border-radius: 2em;
@@ -220,4 +190,132 @@ header .nav-item .nav-link {
     border-radius: .5em;
     margin-top: .5em;
     cursor: pointer;
+}
+
+
+
+/* Contenido */
+.especialidades {
+    font-family: 'Lexend', sans-serif;
+    background-color: #88cbf8;
+}
+.especialidades .titulo{
+    font-family: 'Lexend', sans-serif;
+    font-weight: 700;
+    color: #1E66AA;
+}
+.especialidades .descripcion{
+    font-family: 'Lexend', sans-serif;
+    font-weight: 400;
+    color: #7a7a7a;
+}
+
+
+/* Footer */
+.ondas {
+    height: 100%;
+    margin-top: -140px;
+}
+
+footer {
+    background: rgb(0, 129, 253);
+    background: linear-gradient(0deg, rgba(84, 58, 183, 0.60) 0%, rgba(0, 129, 253, 1) 100%);
+}
+
+.footer ul {
+    list-style: none;
+}
+
+.footer_datos img {
+    width: 250px;
+}
+
+.footer_datos {
+    color: #1E66AA;
+    background-color: #fff;
+    border-radius: 50%;
+    height: 150px;
+    max-width: 700px;
+    padding: 20px;
+    text-align: center;
+}
+
+@media(min-width: 768px) {
+    .footer_datos img {
+        width: 250px;
+    }
+
+    .footer_datos {
+        height: 343px;
+    }
+
+}
+
+/*onda*/
+.flex {
+    /*Flexbox for containers*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.waves {
+    position: relative;
+    width: 100%;
+    height: 15vh;
+    margin-top: -20px;
+    margin-bottom: -7px;
+    /*Fix for safari gap*/
+    min-height: 180px;
+    max-height: 250px;
+}
+
+/* Animation */
+
+.parallax>use {
+    animation: move-forever 25s cubic-bezier(.55, .5, .45, .5) infinite;
+}
+
+.parallax>use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 7s;
+}
+
+.parallax>use:nth-child(2) {
+    animation-delay: -3s;
+    animation-duration: 10s;
+}
+
+.parallax>use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 13s;
+}
+
+.parallax>use:nth-child(4) {
+    animation-delay: -5s;
+    animation-duration: 20s;
+}
+
+@keyframes move-forever {
+    0% {
+        transform: translate3d(-90px, 0, 0);
+    }
+
+    100% {
+        transform: translate3d(85px, 0, 0);
+    }
+}
+
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+    .waves {
+        padding-top: 0px;
+        height: 100px;
+        min-height: 100px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
 }
