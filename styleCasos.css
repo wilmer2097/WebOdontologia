@@ -130,59 +130,49 @@ body {
 }
 
 .content .background-img {
-  background-image: url(/img_doc/2.jpg);
+  background-image: url("./img_doc/2.jpg");
 }
 
 .content .foreground-img {
-  background-image: url(/img_doc/1.jpg);
+  background-image: url("./img_doc/1.jpg");
   width: 50%;
 }
 
 .content1 .background-img1 {
-  background-image: url(/img_doc/4.jpg);
+  background-image: url("./img_doc/4.jpg");
 }
 
 .content1 .foreground-img1 {
-  background-image: url(/img_doc/3.jpg);
+  background-image: url("./img_doc/3.jpg");
   width: 50%;
 }
 
 .content2 .background-img2 {
-  background-image: url(/img_doc/6.jpg);
+  background-image: url("./img_doc/6.jpg");
 }
 
 .content2 .foreground-img2 {
-  background-image: url(/img_doc/5.jpg);
+  background-image: url("./img_doc/5.jpg");
   width: 50%;
 }
 
 .content3 .background-img3 {
-  background-image: url(/img_doc/8.jpg);
+  background-image: url("./img_doc/8.jpg");
 }
 
 .content3 .foreground-img3 {
-  background-image: url(/img_doc/7.jpg);
+  background-image: url("./img_doc/7.jpg");
   width: 50%;
 }
 
 .content4 .background-img4 {
-  background-image: url(/img_doc/10.jpg);
+  background-image: url("./img_doc/10.jpg");
 }
 
 .content4 .foreground-img4 {
-  background-image: url(/img_doc/9.jpg);
+  background-image: url("./img_doc/9.jpg");
   width: 50%;
 }
-
-.content5 .background-img5 {
-  background-image: url(/img_doc/11.jpeg);
-}
-
-.content5 .foreground-img5 {
-  background-image: url(/img_doc/12.jpeg);
-  width: 50%;
-}
-
 
 .content .slider,
 .content1 .slider1,
