@@ -128,7 +128,7 @@ header .nav-item .nav-link {
 }
 
 .testimonios{
-    background-color: #0081FD;
+  background: linear-gradient(0deg, rgba(26, 144, 255,1) 0%, rgba(0,129,253,1) 100%);
     /* padding: 0px 150px 150px 150px; */
 }
 .testimonios .titulo{
@@ -150,7 +150,7 @@ header .nav-item .nav-link {
     font-family: 'Lexend', sans-serif;
     height: auto;
     width: auto;
-    background-color: #0081FD;
+    background: linear-gradient(0deg, rgba(26, 144, 255,1) 0%, rgba(0,129,253,1) 100%);
     border: 10px solid #FFFFFF;
 }
 /* Por que elegirnos */
@@ -198,7 +198,7 @@ header .nav-item .nav-link {
 }
 .detalles .derecha{
     height: 470px;
-    background-color: #0081FD;;
+    background: linear-gradient(0deg, rgba(26, 144, 255,1) 0%, rgba(0,129,253,1) 100%);
 }
 
 
