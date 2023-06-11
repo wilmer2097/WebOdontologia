@@ -9,10 +9,20 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/e4fff14509.js" crossorigin="anonymous"></script>
-
-    <!-- Link Swiper's CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
-
+    <!-- Link Cards -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
     <!-- CSS -->
     <link rel="stylesheet" href="especialidades.css">
 
@@ -58,112 +68,41 @@
             </div>
         </nav>
     </header>
-    <section class="swiper mySwiper">
 
-        <div class="swiper-wrapper">
-
-            <div class="card swiper-slide">
-                <div class="card__image">
-                    <img src="img/especialidades1.jpg" alt="card image">
-                </div>
-
-                <div class="card__content">
-                    <span class="card__title">Endodoncia</span>
-                    <span class="card__name">Odontología Ñingle</span>
-                    <p class="card__text">"¡Sonríe sin dolor! Ven y descubre el poder de la endodoncia+"</p>
-
-                </div>
+    <div class="wrapper">
+        <div class="carousel owl-carousel">
+            <div class="card" id="c1">
+                <span class="card__title">Endodoncia</span>
             </div>
+            <div class="card" id="c2"></div>
+            <div class="card" id="c3"></div>
+            <div class="card" id="c4"></div>
+            <div class="card" id="c5"></div>
+            <div class="card" id="c6"></div>
 
-            <div class="card swiper-slide">
-                <div class="card__image">
-                    <img src="img/especialidades2.jpg" alt="card image">
-                </div>
-
-                <div class="card__content">
-                    <span class="card__title">Ortodoncia</span>
-                    <span class="card__name">Odontología Ñingle</span>
-                    <p class="card__text">"Un paso hacia la sonrisa que siempre soñaste, elige la ortodoncia"</p>
-
-                </div>
-            </div>
-
-            <div class="card swiper-slide">
-                <div class="card__image">
-                    <img src="img/especialidades3.jpg" alt="card image">
-                </div>
-
-                <div class="card__content">
-                    <span class="card__title">Periodoncia</span>
-                    <span class="card__name">Odontología Ñingle</span>
-                    <p class="card__text">"El poder de unas encías saludables, descubre la periodoncia"</p>
-
-                </div>
-            </div>
-
-            <div class="card swiper-slide">
-                <div class="card__image">
-                    <img src="img/especialidades4.jpg" alt="card image">
-                </div>
-
-                <div class="card__content">
-                    <span class="card__title">Protesis</span>
-                    <span class="card__name">Odontología Ñingle</span>
-                    <p class="card__text">"Reemplazando la ausencia, restaurando tu sonrisa con las prótesis dentales"</p>
-
-                </div>
-            </div>
-
-            <div class="card swiper-slide">
-                <div class="card__image">
-                    <img src="img/odonto.jpg" alt="card image">
-                </div>
-
-                <div class="card__content">
-                    <span class="card__title">Odontopediatria</span>
-                    <span class="card__name">Odontología Ñingle</span>
-                    <p class="card__text">"Sonrisas felices desde la infancia, ven a experimentar la odontopediatría"</p>
-
-                </div>
-            </div>
-
-            <div class="card swiper-slide">
-                <div class="card__image">
-                    <img src="img/est.jpg" alt="card image">
-                </div>
-
-                <div class="card__content">
-                    <span class="card__title">Estetica dental</span>
-                    <span class="card__name">Odontología Ñingle</span>
-                    <p class="card__text">"El equilibrio perfecto entre salud y belleza, gracias a la estética dental"</p>
-
-                </div>
-            </div>
         </div>
-    </section>
+    </div>
 
     <section id="especialidades-b">
         <div class="container-fluid especialidades-b d-flex flex-column flex-md-row align-items-center">
-            <div class="col-12 col-md-4 order-first order-md-first p-5" id="marco">
-                <img class="img-fluid" src="img/endodoncia.jpg" alt="" id="img-1">
-            </div>
-
             <div class="d-flex flex-column col-12 col-md-8">
                 <div class="titulo">
                     <h2 class="fw-bold pb-5 text-center">Endodoncia</h2>
                 </div>
-                <div class="px-5 p-5">
+                <div class="px-4 p-4">
                     <p class="descripcion fst-light text-justify">
-                        "La endodoncia es un procedimiento odontológico que consiste
-                        en tratar y salvar dientes que presentan infecciones, daños en la
-                        pulpa dental o enfermedades que afectan los tejidos internos del diente.
-                        Durante este tratamiento, se remueve la pulpa dental afectada, se limpia y desinfecta el
-                        conducto radicular, y se sella para prevenir futuras infecciones. El objetivo principal de
-                        la endodoncia es aliviar el dolor, eliminar la infección y preservar el diente natural,
-                        permitiendo
-                        al paciente mantener su función masticatoria y una sonrisa saludable."
+                        "La endodoncia es un procedimiento odontológico que consiste en tratar y salvar dientes que
+                        presentan infecciones, daños en la pulpa dental o enfermedades que afectan los tejidos internos
+                        del diente. Durante este tratamiento, se remueve la pulpa dental afectada, se limpia y
+                        desinfecta el conducto radicular, y se sella para prevenir futuras infecciones. El objetivo
+                        principal de la endodoncia es aliviar el dolor, eliminar la infección y preservar el diente
+                        natural, permitiendo al paciente mantener su función masticatoria y una sonrisa saludable."
                     </p>
                 </div>
+            </div>
+
+            <div class="col-12 col-md-4 order-last order-md-first p-5" id="marco">
+                <img class="img-fluid" src="img/endodoncia.jpg" alt="" id="img-1">
             </div>
         </div>
     </section>
@@ -173,7 +112,7 @@
                 <div class="titulo">
                     <h2 class="fw-bold pb-5 text-center">Ortodoncia</h2>
                 </div>
-                <div class="px-5 p-5">
+                <div class="px-4 p-4">
                     <p class="descripcion fst-light text-justify">
                         "La ortodoncia es una especialidad de la odontología que se encarga de corregir y mejorar la
                         posición de los dientes y la mordida, así como de alinear correctamente los maxilares. Mediante
@@ -195,14 +134,11 @@
     </section>
     <section id="especialidades-b">
         <div class="container-fluid especialidades-b d-flex flex-column flex-md-row align-items-center">
-            <div class="col-12 col-md-4 order-first order-md-first p-5">
-                <img class="img-fluid" src="img/periodoncia2.jpg" alt="" id="img-1">
-            </div>
             <div class="d-flex flex-column col-12 col-md-8">
                 <div class="titulo">
                     <h2 class="fw-bold pb-5 text-center">Periodoncia</h2>
                 </div>
-                <div class="px-5 p-5">
+                <div class="px-4 p-4">
                     <p class="descripcion fst-light text-justify">
                         "
                         La periodoncia es una rama de la odontología especializada en el diagnóstico, prevención y
@@ -216,6 +152,10 @@
                     </p>
                 </div>
             </div>
+
+            <div class="col-12 col-md-4 order-last order-md-first p-5" id="marco">
+                <img class="img-fluid" src="img/periodoncia2.jpg" alt="" id="img-1">
+            </div>
         </div>
     </section>
     <section id="especialidades">
@@ -224,7 +164,7 @@
                 <div class="titulo">
                     <h2 class="fw-bold pb-5 text-center">Protesis</h2>
                 </div>
-                <div class="px-5 p-5">
+                <div class="px-4 p-4">
                     <p class="descripcion fst-light text-justify">
                         "La prótesis dental es un dispositivo diseñado para reemplazar uno o varios dientes ausentes,
                         restaurando la función masticatoria y mejorando la estética dental. Esta prótesis puede ser
@@ -246,15 +186,11 @@
     </section>
     <section id="especialidades-b">
         <div class="container-fluid especialidades-b d-flex flex-column flex-md-row align-items-center">
-            <div class="col-12 col-md-4 order-first order-md-first p-5" id="marco">
-                <img class="img-fluid" src="img/odontopediatria.jpg" alt="" id="img-1">
-            </div>
-
             <div class="d-flex flex-column col-12 col-md-8">
                 <div class="titulo">
                     <h2 class="fw-bold pb-5 text-center">Odontopediatria</h2>
                 </div>
-                <div class="px-5 p-5">
+                <div class="px-4 p-4">
                     <p class="descripcion fst-light text-justify">
                         "La odontopediatría es una rama de la odontología que se enfoca en el cuidado dental de los
                         niños desde su infancia hasta la adolescencia. Su objetivo principal es mantener y promover la
@@ -269,6 +205,10 @@
                     </p>
                 </div>
             </div>
+
+            <div class="col-12 col-md-4 order-last order-md-first p-5" id="marco">
+                <img class="img-fluid" src="img/odontopediatria.jpg" alt="" id="img-1">
+            </div>
         </div>
     </section>
     <section id="especialidades">
@@ -277,7 +217,7 @@
                 <div class="titulo">
                     <h2 class="fw-bold pb-5 text-center">Cariologia o estetica dental</h2>
                 </div>
-                <div class="px-5 p-5">
+                <div class="px-4 p-4">
                     <p class="descripcion fst-light text-justify">
                         "La estética dental se refiere al campo de la odontología que se centra en mejorar la apariencia
                         estética de la sonrisa y los dientes. Este enfoque busca lograr una sonrisa atractiva, armoniosa
