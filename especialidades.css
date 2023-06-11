@@ -141,27 +141,27 @@ header .nav-item .nav-link {
 }
 
 #c1 {
-    background: url(img/especialidades1.jpg) no-repeat center center/cover;
+    background: url(img/endodoncia.jpeg) no-repeat center center/cover;
 }
 
 #c2 {
-    background: url(img/especialidades2.jpg) no-repeat center center/cover;
+    background: url(img/ortodoncia.jpeg) no-repeat center center/cover;
 }
 
 #c3 {
-    background: url(img/especialidades3.jpg) no-repeat center center/cover;
+    background: url(img/periodoncia.jpeg) no-repeat center center/cover;
 }
 
 #c4 {
-    background: url(img/especialidades4.jpg) no-repeat center center/cover;
+    background: url(img/protesis.jpeg) no-repeat center center/cover;
 }
 
 #c5 {
-    background: url(img/odonto.jpg) no-repeat center center/cover;
+    background: url(img/odontopediatria.jpeg) no-repeat center center/cover;
 }
 
 #c6 {
-    background: url(img/est.jpg) no-repeat center center/cover;
+    background: url(img/estetica.jpeg) no-repeat center center/cover;
 }
 
 .owl-dots {
@@ -273,9 +273,8 @@ header .nav-item .nav-link {
     margin-top: -140px;
 }
 
-footer {
-    background: rgb(0, 129, 253);
-    background: linear-gradient(0deg, rgba(84, 58, 183, 0.60) 0%, rgba(0, 129, 253, 1) 100%);
+footer{
+    background: linear-gradient(0deg, rgba(30,102,170,1) 0%, rgba(0,129,253,1) 100%);
 }
 
 .footer ul {
