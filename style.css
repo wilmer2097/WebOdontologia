@@ -298,10 +298,12 @@ footer{
     }
   }
 
-
-
-
-
+/* reservarCita */
+.reservarCita {
+  margin-top: 86px;
+  background-color: #0081FD;
+  padding-bottom: 100px;
+}
 
 
 /* Contacto */
@@ -317,7 +319,7 @@ footer{
   }
 
 .contacto {
-    padding-top: 100px;
+    padding-top: 86px;
     background-color: #FFFFFF;
     padding-bottom: 50px;
 }
