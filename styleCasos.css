@@ -240,7 +240,7 @@ body {
 
     position: relative;
 
-    width: 500px;
+    width: 450px;
 
     height: 200px;
 
@@ -292,7 +292,7 @@ body {
 
 .content5 .img {
 
-    position: absolute;
+    position: absolute ;
 
     top: 0;
 
@@ -303,7 +303,6 @@ body {
     height: 100%;
 
     background-size: cover;
-
 }
 
 
@@ -421,7 +420,7 @@ body {
 
 .content5 .slider5 {
 
-    position: absolute;
+    position: relative;
 
     -webkit-appearance: none;
 
