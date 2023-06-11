@@ -225,7 +225,6 @@ body {
 
 
 
-
 .content,
 
 .content1,
@@ -265,7 +264,7 @@ body {
 
     .content5 {
 
-        width: 250px;
+        width: 225px;
 
         height: 100px;
 
@@ -273,12 +272,12 @@ body {
 
 
 
-
-
 }
 
 
-
+h2{
+    text-align: center;
+}
 
 .content .img,
 
@@ -647,8 +646,6 @@ body {
 
     background-color: #0081FD;
 
-    ;
-
 }
 
 
@@ -656,6 +653,11 @@ body {
 
 
 /* Footer */
+.nose{
+    background-color: #0081FD; /*BUSQUEN COLOR PARA CONTRASTAR ESTO Y QUE QUEDE*/
+  }
+  
+  
 .ondas {
     height: 100%;
     margin-top: -140px;

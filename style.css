@@ -241,7 +241,7 @@ footer{
   }
 
   /*onda*/  
-  .flex { /*Flexbox for containers*/
+  .flex {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -258,7 +258,7 @@ footer{
     max-height:250px;
   }
   
-  /* Animation */
+   /*Animation*/
   
   .parallax > use {
     animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
@@ -298,7 +298,9 @@ footer{
       font-size:24px;
     }
   }
-  
+
+
+
 
 
 
