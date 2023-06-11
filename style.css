@@ -83,7 +83,7 @@ header .nav-item .nav-link {
 /* Carrousel */
 
 #carouselExampleInterval {
-    margin-top: 100px;
+    margin-top: 85px;
 }
 
 .carousel-item img {
@@ -209,8 +209,7 @@ header .nav-item .nav-link {
 }
 
 footer{
-  background: rgb(0,129,253);
-  background: linear-gradient(0deg, rgba(84, 58, 183, 0.60) 0%, rgba(0,129,253,1) 100%);
+  background: linear-gradient(0deg, rgba(30,102,170,1) 0%, rgba(0,129,253,1) 100%);
 }
 
 .footer ul {
