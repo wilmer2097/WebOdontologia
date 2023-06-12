@@ -103,6 +103,7 @@
   </div>
   <div id="loading-text">Cargando...</div>
 </div> -->
+
 <body>
   <header class="header ">
     <nav class="navbar bg-body-tertiary  navbar-expand-lg fixed-top">
@@ -201,7 +202,7 @@
               <div class="card text-center">
                 <div class="card-body d-flex align-items-center flex-row flex-wrap">
                   <div class="col-12 col-md-4">
-                    <img class="img-fluid" src="img/paciente4.jpg" alt="Foto del paciente 4">
+                    <img class="img-fluid" src="img/pacientex.png" alt="Foto del paciente 4">
                   </div>
                   <div class="col-12 col-md-8">
                     <p class="card-text text-white p-md-5 p-3">Recomiendo encarecidamente a este dentista. Es muy
@@ -209,6 +210,24 @@
                       siempre se preocupa por mi bienestar. Me explicó todo el procedimiento con detalle y me dio
                       opciones para tomar una decisión informada.</p>
                     <p class="card-text text-center text-sm-end text-black pe-md-5 pb-3">- Paciente, 001</p>
+                    <!-- modal -->
+                    <button id="openModal" class="btn btn-primary">Abrir modal</button>
+                    <div class="modal" id="videoModal" tabindex="-1">
+                      <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title text-white">Reproducir Video</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <video id="videoPlayer" controls>
+                              <source src="img/paciente.mp4" type="video/mp4">
+                            </video>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- modal -->
                   </div>
                 </div>
               </div>
@@ -217,7 +236,7 @@
               <div class="card text-center">
                 <div class="card-body d-flex align-items-center flex-row flex-wrap">
                   <div class="col-12 col-md-4">
-                    <img class="img-fluid" src="img/paciente4.jpg" alt="Foto del paciente 4">
+                    <img class="img-fluid" src="img/pacientex2.png" alt="Foto del paciente 4">
                   </div>
                   <div class="col-12 col-md-8">
                     <p class="card-text text-white p-md-5 p-3">Recomiendo encarecidamente a este dentista. Es muy
@@ -225,6 +244,28 @@
                       siempre se preocupa por mi bienestar. Me explicó todo el procedimiento con detalle y me dio
                       opciones para tomar una decisión informada.</p>
                     <p class="card-text text-center text-sm-end text-black pe-md-5 pb-3">- Paciente, 002</p>
+                    <!-- Botón para abrir el modal -->
+                    <button id="openModal" class="btn btn-primary">Ver Video</button>
+
+                    <!-- Modal de video -->
+                    <div class="modal" id="videoModal" tabindex="-1">
+                      <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title text-white">Reproducir Video</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <div class="embed-responsive embed-responsive-16by9">
+                              <video id="videoPlayer" controls>
+                                <source src="img/Paciente2.mp4" type="video/mp4">
+                              </video>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- modal -->
                   </div>
                 </div>
               </div>
@@ -391,5 +432,6 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
   integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 <script src="script.js"></script>
+<script src="modal.js"></script>
 
 </html>
