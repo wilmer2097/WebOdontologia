@@ -211,9 +211,11 @@
                       siempre se preocupa por mi bienestar. Me explicó todo el procedimiento con detalle y me dio
                       opciones para tomar una decisión informada.</p>
                     <p class="card-text text-center text-sm-end text-black pe-md-5 pb-3">- Paciente, 001</p>
-                    <!-- modal -->
-                    <button id="openModal" class="btn btn-primary">Ver Video</button>
-                    <div class="modal" id="videoModal" tabindex="-1">
+                    <!-- Botón para abrir el modal -->
+                    <button data-bs-toggle="modal" data-bs-target="#mod" class="btn btn-outline-light mb-1">Ver Video</button>
+
+                    <!-- Modal de video -->
+                    <div class="modal" id="mod" tabindex="-1">
                       <div class="modal-dialog modal-dialog-centered">
                         <div class="modal-content">
                           <div class="modal-header">
@@ -221,9 +223,11 @@
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                           </div>
                           <div class="modal-body">
-                            <video id="videoPlayer" controls>
-                              <source src="img/paciente.mp4" type="video/mp4">
-                            </video>
+                            <div class="embed-responsive embed-responsive-16by9">
+                              <video id="videoPlayer" controls>
+                                <source src="img/paciente.mp4" type="video/mp4">
+                              </video>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -246,10 +250,10 @@
                       opciones para tomar una decisión informada.</p>
                     <p class="card-text text-center text-sm-end text-black pe-md-5 pb-3">- Paciente, 002</p>
                     <!-- Botón para abrir el modal -->
-                    <button id="openModal" class="btn btn-primary">Ver Video</button>
+                    <button data-bs-toggle="modal" data-bs-target="#mod2" class="btn btn-outline-light mb-1">Ver Video</button>
 
                     <!-- Modal de video -->
-                    <div class="modal" id="videoModal" tabindex="-1">
+                    <div class="modal" id="mod2" tabindex="-1">
                       <div class="modal-dialog modal-dialog-centered">
                         <div class="modal-content">
                           <div class="modal-header">
