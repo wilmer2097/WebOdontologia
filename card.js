@@ -19,3 +19,16 @@ $(".carousel").owlCarousel({
         },
     }
 })
+
+
+$(document).ready(function() {
+    var preloader = $('#preloader');
+  
+    // Mostrar el preloader
+    preloader.show();
+  
+    // Ocultar el preloader después de 5 segundos (4000 milisegundos)
+    setTimeout(function() {
+      preloader.hide();
+    }, 500);
+  });

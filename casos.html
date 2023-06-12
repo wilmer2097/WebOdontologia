@@ -19,7 +19,88 @@
     <link href="styleCasos.css" rel="stylesheet">
 
 
+    <!-- ====================================
+	WHATSAPP CHAT 
+	=========================================-->
+    <div id="whatsapp-chat" class="hide">
+        <div class="header-chat d-flex">
+            <div class="head-home pl-2">
+                <img src="img/logo1.svg" width="40">
 
+            </div>
+            <div class="get-new pl-3 pt-1">
+                <!-- <div id="get-label">Informes</div> -->
+                <div id="get-nama">Atención al cliente</div>
+            </div>
+        </div>
+        <div class="start-chat">
+            <div class="first-msg">
+                <div class="cvjcv _1Ilru _8YVHI">
+
+                    <span>¡Hola! ¿Qué puedo hacer por ti?</span>
+                </div>
+            </div>
+            <div class="blanter-msg"><textarea id="chat-input" placeholder="Escribe un mensaje" maxlength="120" row="1"
+                    value="1"></textarea>
+                <a href="#" onclick="enviar_mensaje();" id="send-it">
+                    <i class="fa fa-paper-plane"></i></a>
+            </div>
+        </div>
+        <div id="get-number">51998698808</div><a class="close-chat" onclick="cerrar_chat();" href="#">×</a>
+    </div>
+
+
+    <a class="blantershow-chat" onclick="mostrar_chat();" href="#" title="ShowWhatsapp Chat">
+        <svg width="18" viewBox="0 0 24 24">
+            <defs />
+            <path fill="#eceff1"
+                d="M20.5 3.4A12.1 12.1 0 0012 0 12 12 0 001.7 17.8L0 24l6.3-1.7c2.8 1.5 5 1.4 5.8 1.5a12 12 0 008.4-20.3z" />
+            <path fill="#4caf50"
+                d="M12 21.8c-3.1 0-5.2-1.6-5.4-1.6l-3.7 1 1-3.7-.3-.4A9.9 9.9 0 012.1 12a10 10 0 0117-7 9.9 9.9 0 01-7 16.9z" />
+            <path fill="#fafafa"
+                d="M17.5 14.3c-.3 0-1.8-.8-2-.9-.7-.2-.5 0-1.7 1.3-.1.2-.3.2-.6.1s-1.3-.5-2.4-1.5a9 9 0 01-1.7-2c-.3-.6.4-.6 1-1.7l-.1-.5-1-2.2c-.2-.6-.4-.5-.6-.5-.6 0-1 0-1.4.3-1.6 1.8-1.2 3.6.2 5.6 2.7 3.5 4.2 4.2 6.8 5 .7.3 1.4.3 1.9.2.6 0 1.7-.7 2-1.4.3-.7.3-1.3.2-1.4-.1-.2-.3-.3-.6-.4z" />
+        </svg>Chat
+    </a>
+
+    <script>
+        function enviar_mensaje() {
+            var a = document.getElementById("chat-input");
+            if ("" != a.value) {
+                var b = document.getElementById("get-number").innerHTML,
+                    c = document.getElementById("chat-input").value,
+                    d = "https://api.whatsapp.com/send",
+                    e = b,
+                    f = "&text=" + c;
+                if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) var d = "whatsapp://send";
+                var g = d + "?phone=" + e + f;
+                window.open(g, "_blank");
+            }
+        }
+
+        const whatsapp_chat = document.getElementById("whatsapp-chat");
+
+        function cerrar_chat() {
+            whatsapp_chat.classList.add("hide");
+            whatsapp_chat.classList.remove("showWhatsapp");
+
+        }
+
+        function mostrar_chat() {
+
+            if (whatsapp_chat.classList.value == "showWhatsapp") {
+
+                whatsapp_chat.classList.add("hide");
+                whatsapp_chat.classList.remove("showWhatsapp");
+            } else {
+                whatsapp_chat.classList.add("showWhatsapp");
+
+                whatsapp_chat.classList.remove("hide");
+
+            }
+
+
+        }
+    </script>
 
     <title>Casos Clínicos</title>
 
@@ -29,7 +110,13 @@
 
 
 <body>
-
+    <div id="preloader">
+        <div id="loader">
+            <div id="shadow"></div>
+            <div id="box"></div>
+        </div>
+        <div id="loading-text">Cargando...</div>
+    </div>
     <header class="header ">
 
         <nav class="navbar bg-body-tertiary  navbar-expand-lg fixed-top">
@@ -109,125 +196,125 @@
 
 
     <section class="main">
+        <div class="contenedor">
+            <div class="sliders d-flex justify-content-center flex-wrap pt-5">
 
-        <div class="sliders d-flex justify-content-center flex-wrap pt-5">
+                <div class="card0 pe-sm-5 pb-5">
 
-            <div class="card0 pe-sm-5 pb-5">
+                    <div class="titulo-slider">
 
-                <div class="titulo-slider">
+                        <h2 class="text-white">Implantación dental</h2>
 
-                    <h2 class="text-white">Implantación dental</h2>
+                    </div>
+
+                    <div class='content'>
+
+                        <div class='img background-img'></div>
+
+                        <div class='img foreground-img'></div>
+
+                        <input type="range" min="1" max="100" value="50" class="slider" name='slider' id="slider">
+
+                        <div class='slider-button'></div>
+
+                    </div>
 
                 </div>
 
-                <div class='content'>
+                <div class="card1 pe-sm-5 pb-5">
 
-                    <div class='img background-img'></div>
+                    <div class="titulo-slider1">
 
-                    <div class='img foreground-img'></div>
+                        <h2 class="text-white">Implantación dental</h2>
 
-                    <input type="range" min="1" max="100" value="50" class="slider" name='slider' id="slider">
+                    </div>
 
-                    <div class='slider-button'></div>
+                    <div class='content1'>
+
+                        <div class='img background-img1'></div>
+
+                        <div class='img foreground-img1'></div>
+
+                        <input type="range" min="1" max="100" value="50" class="slider1" name='slider1' id="slider1">
+
+                        <div class='slider-button1'></div>
+
+                    </div>
 
                 </div>
+
+                <div class="card2 pe-sm-5 pb-5">
+
+                    <div class="titulo-slider2">
+
+                        <h2 class="text-white">Ortodoncia</h2>
+
+                    </div>
+
+                    <div class='content2'>
+
+                        <div class='img background-img2'></div>
+
+                        <div class='img foreground-img2'></div>
+
+                        <input type="range" min="1" max="100" value="50" class="slider2" name='slider2' id="slider2">
+
+                        <div class='slider-button2'></div>
+
+                    </div>
+
+                </div>
+
+                <div class="card3 pe-sm-5 pb-5">
+
+                    <div class="titulo-slider3">
+
+                        <h2 class="text-white">Ortodoncia</h2>
+
+                    </div>
+
+                    <div class='content3'>
+
+                        <div class='img background-img3'></div>
+
+                        <div class='img foreground-img3'></div>
+
+                        <input type="range" min="1" max="100" value="50" class="slider3" name='slider3' id="slider3">
+
+                        <div class='slider-button3'></div>
+
+                    </div>
+
+                </div>
+
+                <div class="card4 pe-sm-5 pb-5">
+
+                    <div class="titulo-slider4">
+
+                        <h2 class="text-white">Ortodoncia</h2>
+
+                    </div>
+
+                    <div class='content4'>
+
+                        <div class='img background-img4'></div>
+
+                        <div class='img foreground-img4'></div>
+
+                        <input type="range" min="1" max="100" value="50" class="slider4" name='slider4' id="slider4">
+
+                        <div class='slider-button4'></div>
+
+                    </div>
+
+                </div>
+
+
+
 
             </div>
-
-            <div class="card1 pe-sm-5 pb-5">
-
-                <div class="titulo-slider1">
-
-                    <h2 class="text-white" >Implantación dental</h2>
-
-                </div>
-
-                <div class='content1'>
-
-                    <div class='img background-img1'></div>
-
-                    <div class='img foreground-img1'></div>
-
-                    <input type="range" min="1" max="100" value="50" class="slider1" name='slider1' id="slider1">
-
-                    <div class='slider-button1'></div>
-
-                </div>
-
-            </div>
-
-            <div class="card2 pe-sm-5 pb-5">
-
-                <div class="titulo-slider2">
-
-                    <h2 class="text-white">Ortodoncia</h2>
-
-                </div>
-
-                <div class='content2'>
-
-                    <div class='img background-img2'></div>
-
-                    <div class='img foreground-img2'></div>
-
-                    <input type="range" min="1" max="100" value="50" class="slider2" name='slider2' id="slider2">
-
-                    <div class='slider-button2'></div>
-
-                </div>
-
-            </div>
-
-            <div class="card3 pe-sm-5 pb-5">
-
-                <div class="titulo-slider3">
-
-                    <h2 class="text-white" >Ortodoncia</h2>
-
-                </div>
-
-                <div class='content3'>
-
-                    <div class='img background-img3'></div>
-
-                    <div class='img foreground-img3'></div>
-
-                    <input type="range" min="1" max="100" value="50" class="slider3" name='slider3' id="slider3">
-
-                    <div class='slider-button3'></div>
-
-                </div>
-
-            </div>
-
-            <div class="card4 pe-sm-5 pb-5">
-
-                <div class="titulo-slider4">
-
-                    <h2 class="text-white" >Ortodoncia</h2>
-
-                </div>
-
-                <div class='content4'>
-
-                    <div class='img background-img4'></div>
-
-                    <div class='img foreground-img4'></div>
-
-                    <input type="range" min="1" max="100" value="50" class="slider4" name='slider4' id="slider4">
-
-                    <div class='slider-button4'></div>
-
-                </div>
-
-            </div>
-
-
-
 
         </div>
-
-
 
 
 
@@ -259,8 +346,10 @@
                 <div class="col-lg-6">
                     <div class="footer_datos">
                         <img src="img/logo.png" class="img-fluid p-2" width="">
-                        <h4 class="d-none d-md-block">No esperes más para cuidar de tu salud dental.Programa una cita en línea
-                            con nosotros hoy mismo y experimenta la diferencia que nuesro odontología en linea puede hacer 
+                        <h4 class="d-none d-md-block">No esperes más para cuidar de tu salud dental.Programa una cita en
+                            línea
+                            con nosotros hoy mismo y experimenta la diferencia que nuesro odontología en linea puede
+                            hacer
                             para tu sonrisa.
                         </h4>
                     </div>

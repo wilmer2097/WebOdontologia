@@ -49,4 +49,23 @@
 //     var re = /\S+@\S+\.\S+/;
 //     return re.test(email);
 //   }
+
+
+
+
+// window.addEventListener('load', function() {
+//     var preloader = document.getElementById('preloader');
+//     preloader.style.display = 'none';
+//   });
+
+$(document).ready(function() {
+    var preloader = $('#preloader');
   
+    // Mostrar el preloader
+    preloader.show();
+  
+    // Ocultar el preloader después de 5 segundos (4000 milisegundos)
+    setTimeout(function() {
+      preloader.hide();
+    }, 500);
+  });

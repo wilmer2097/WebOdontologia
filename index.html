@@ -16,82 +16,93 @@
   <!-- ====================================
 	WHATSAPP CHAT 
 	=========================================-->
-	<div id="whatsapp-chat" class="hide">
-		<div class="header-chat d-flex">
-			<div class="head-home pl-2">
-				<img src="img/logo1.svg" width="40">
+  <div id="whatsapp-chat" class="hide">
+    <div class="header-chat d-flex">
+      <div class="head-home pl-2">
+        <img src="img/logo1.svg" width="40">
 
-			</div>
-			<div class="get-new pl-3 pt-1">
-				<!-- <div id="get-label">Informes</div> -->
-				<div id="get-nama">Atención al cliente</div>
-			</div>
-		</div>
-		<div class="start-chat">
-			<div class="first-msg">
-			<div class="cvjcv _1Ilru _8YVHI">
-							
-				<span>¡Hola! ¿Qué puedo hacer por ti?</span>
-			</div>
-			</div>
-			<div class="blanter-msg"><textarea id="chat-input" placeholder="Escribe un mensaje" maxlength="120" row="1" value="1"></textarea>
-				<a href="#" onclick="enviar_mensaje();" id="send-it">
-					<i class="fa fa-paper-plane"></i></a>
-			</div>
-		</div>
-		<div id="get-number">51935460318</div><a class="close-chat" onclick="cerrar_chat();" href="#">×</a>
-	</div>
+      </div>
+      <div class="get-new pl-3 pt-1">
+        <!-- <div id="get-label">Informes</div> -->
+        <div id="get-nama">Atención al cliente</div>
+      </div>
+    </div>
+    <div class="start-chat">
+      <div class="first-msg">
+        <div class="cvjcv _1Ilru _8YVHI">
+
+          <span>¡Hola! ¿Qué puedo hacer por ti?</span>
+        </div>
+      </div>
+      <div class="blanter-msg"><textarea id="chat-input" placeholder="Escribe un mensaje" maxlength="120" row="1"
+          value="1"></textarea>
+        <a href="#" onclick="enviar_mensaje();" id="send-it">
+          <i class="fa fa-paper-plane"></i></a>
+      </div>
+    </div>
+    <div id="get-number">51998698808</div><a class="close-chat" onclick="cerrar_chat();" href="#">×</a>
+  </div>
 
 
-	<a class="blantershow-chat" onclick="mostrar_chat();" href="#" title="ShowWhatsapp Chat">
-		<svg width="18" viewBox="0 0 24 24">
-			<defs />
-			<path fill="#eceff1" d="M20.5 3.4A12.1 12.1 0 0012 0 12 12 0 001.7 17.8L0 24l6.3-1.7c2.8 1.5 5 1.4 5.8 1.5a12 12 0 008.4-20.3z" />
-			<path fill="#4caf50" d="M12 21.8c-3.1 0-5.2-1.6-5.4-1.6l-3.7 1 1-3.7-.3-.4A9.9 9.9 0 012.1 12a10 10 0 0117-7 9.9 9.9 0 01-7 16.9z" />
-			<path fill="#fafafa" d="M17.5 14.3c-.3 0-1.8-.8-2-.9-.7-.2-.5 0-1.7 1.3-.1.2-.3.2-.6.1s-1.3-.5-2.4-1.5a9 9 0 01-1.7-2c-.3-.6.4-.6 1-1.7l-.1-.5-1-2.2c-.2-.6-.4-.5-.6-.5-.6 0-1 0-1.4.3-1.6 1.8-1.2 3.6.2 5.6 2.7 3.5 4.2 4.2 6.8 5 .7.3 1.4.3 1.9.2.6 0 1.7-.7 2-1.4.3-.7.3-1.3.2-1.4-.1-.2-.3-.3-.6-.4z" />
-		</svg>Chat
-	</a>
+  <a class="blantershow-chat" onclick="mostrar_chat();" href="#" title="ShowWhatsapp Chat">
+    <svg width="18" viewBox="0 0 24 24">
+      <defs />
+      <path fill="#eceff1"
+        d="M20.5 3.4A12.1 12.1 0 0012 0 12 12 0 001.7 17.8L0 24l6.3-1.7c2.8 1.5 5 1.4 5.8 1.5a12 12 0 008.4-20.3z" />
+      <path fill="#4caf50"
+        d="M12 21.8c-3.1 0-5.2-1.6-5.4-1.6l-3.7 1 1-3.7-.3-.4A9.9 9.9 0 012.1 12a10 10 0 0117-7 9.9 9.9 0 01-7 16.9z" />
+      <path fill="#fafafa"
+        d="M17.5 14.3c-.3 0-1.8-.8-2-.9-.7-.2-.5 0-1.7 1.3-.1.2-.3.2-.6.1s-1.3-.5-2.4-1.5a9 9 0 01-1.7-2c-.3-.6.4-.6 1-1.7l-.1-.5-1-2.2c-.2-.6-.4-.5-.6-.5-.6 0-1 0-1.4.3-1.6 1.8-1.2 3.6.2 5.6 2.7 3.5 4.2 4.2 6.8 5 .7.3 1.4.3 1.9.2.6 0 1.7-.7 2-1.4.3-.7.3-1.3.2-1.4-.1-.2-.3-.3-.6-.4z" />
+    </svg>Chat
+  </a>
 
-	<script>
-		function enviar_mensaje() {
-			var a = document.getElementById("chat-input");
-			if ("" != a.value) {
-				var b = document.getElementById("get-number").innerHTML,
-					c = document.getElementById("chat-input").value,
-					d = "https://api.whatsapp.com/send",
-					e = b,
-					f = "&text=" + c;
-				if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) var d = "whatsapp://send";
-				var g = d + "?phone=" + e + f;
-				window.open(g, "_blank");
-			}
-		}
+  <script>
+    function enviar_mensaje() {
+      var a = document.getElementById("chat-input");
+      if ("" != a.value) {
+        var b = document.getElementById("get-number").innerHTML,
+          c = document.getElementById("chat-input").value,
+          d = "https://api.whatsapp.com/send",
+          e = b,
+          f = "&text=" + c;
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) var d = "whatsapp://send";
+        var g = d + "?phone=" + e + f;
+        window.open(g, "_blank");
+      }
+    }
 
-		const whatsapp_chat = document.getElementById("whatsapp-chat");
+    const whatsapp_chat = document.getElementById("whatsapp-chat");
 
-		function cerrar_chat() {
-			whatsapp_chat.classList.add("hide");
-			whatsapp_chat.classList.remove("showWhatsapp");
+    function cerrar_chat() {
+      whatsapp_chat.classList.add("hide");
+      whatsapp_chat.classList.remove("showWhatsapp");
 
-		}
+    }
 
-		function mostrar_chat() {
+    function mostrar_chat() {
 
-			if(whatsapp_chat.classList.value == "showWhatsapp"){
-				
-				whatsapp_chat.classList.add("hide");
-			whatsapp_chat.classList.remove("showWhatsapp");
-			}else{
-					whatsapp_chat.classList.add("showWhatsapp");
-		
-			whatsapp_chat.classList.remove("hide");
+      if (whatsapp_chat.classList.value == "showWhatsapp") {
 
-			}
-		
-			
-		}
-	</script>
+        whatsapp_chat.classList.add("hide");
+        whatsapp_chat.classList.remove("showWhatsapp");
+      } else {
+        whatsapp_chat.classList.add("showWhatsapp");
+
+        whatsapp_chat.classList.remove("hide");
+
+      }
+
+
+    }
+  </script>
 </head>
+<!-- <div id="preloader">
+  <div id="loader">
+    <div id="shadow"></div>
+    <div id="box"></div>
+  </div>
+  <div id="loading-text">Cargando...</div>
+</div> -->
 <body>
   <header class="header ">
     <nav class="navbar bg-body-tertiary  navbar-expand-lg fixed-top">
@@ -278,7 +289,7 @@
         </div>
     </section>
     </div>
-    
+
     <section class="detalles">
       <div class="d-flex flex-wrap">
         <div class="izquierda d-flex justify-content-center col-12 col-md-6 flex-column text-center pt-5">
@@ -293,7 +304,9 @@
           <i class="fa-solid fa-location-dot fa-2xl" style="color: #ffffff;"></i>
           <h2 class="text-white p-5">Encuentranos En</h2>
           <h5 class="text-white">CALLE VALENCIA 102 DPTO. 203 URB LA MACARENA LA PERLA CALLAO, Lima, Peru</h5>
-            <a class="text-white p-5" target="_blank" href="https://www.google.com/maps/dir//Odontolog%C3%ADa+Est%C3%A9tica+E+Integral+%C3%91ingle+C.+Valencia+102+La+Perla+07016/@-12.0733326,-77.1106408,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x9105cbdb9b09a86d:0x9718d1b31e1548ec!2m2!1d-77.1106418!2d-12.0733326?entry=ttu"><button class="btn btn-outline-light">OBTENER DIRECCIÓN</button></a>
+          <a class="text-white p-5" target="_blank"
+            href="https://www.google.com/maps/dir//Odontolog%C3%ADa+Est%C3%A9tica+E+Integral+%C3%91ingle+C.+Valencia+102+La+Perla+07016/@-12.0733326,-77.1106408,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x9105cbdb9b09a86d:0x9718d1b31e1548ec!2m2!1d-77.1106418!2d-12.0733326?entry=ttu"><button
+              class="btn btn-outline-light">OBTENER DIRECCIÓN</button></a>
         </div>
       </div>
     </section>
@@ -303,76 +316,77 @@
         width="100%" height="500" style="border:0; margin-bottom: -70px;" allowfullscreen="" loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
-<!--Waves Container-->
-<div>
-  <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-    viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
-    <defs>
-      <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
-    </defs>
-    <g class="parallax">
-      <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.6" />
-      <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
-      <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.4)" />
-      <use xlink:href="#gentle-wave" x="48" y="7" fill="#0081FD" />
-    </g>
-  </svg>
-</div>
-<!--Waves end-->
-<footer>
-  <!-- <img class="img-fluid ondas" src="img/Footer2.svg" alt="footerimg"> -->
-  <div class="container-fluid footer bg-footer p-5">
-    <div class="row">
-      <div class="col-lg-6">
-        <div class="footer_datos">
-          <img src="img/logo.png" class="img-fluid p-2" width="">
-          <h4 class="d-none d-md-block">No esperes más para cuidar de tu salud dental.Programa una cita en línea
-            con nosotros hoy mismo y experimenta la diferencia que nuesro odontología en linea puede hacer 
-            para tu sonrisa.
-          </h4>
+    <!--Waves Container-->
+    <div>
+      <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+          <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+          <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.6" />
+          <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+          <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.4)" />
+          <use xlink:href="#gentle-wave" x="48" y="7" fill="#0081FD" />
+        </g>
+      </svg>
+    </div>
+    <!--Waves end-->
+    <footer>
+      <!-- <img class="img-fluid ondas" src="img/Footer2.svg" alt="footerimg"> -->
+      <div class="container-fluid footer bg-footer p-5">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="footer_datos">
+              <img src="img/logo.png" class="img-fluid p-2" width="">
+              <h4 class="d-none d-md-block">No esperes más para cuidar de tu salud dental.Programa una cita en línea
+                con nosotros hoy mismo y experimenta la diferencia que nuesro odontología en linea puede hacer
+                para tu sonrisa.
+              </h4>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mt-5 mt-md-0 d-flex footer">
+            <ul class="ps-0">
+              <li class=" m-lg-5 mb-4">
+                <a class="text-white" target="_blank"
+                  href="https://www.facebook.com/profile.php?id=100040335201259&mibextid=ZbWKwL">
+                  <i class="fa-brands fa-facebook-f fa-2xl" style="color: #ffffff;"></i>
+                </a>
+              </li>
+              <li class=" m-lg-5 mb-4">
+                <a class="text-white" href="#">
+                  <i class="fa-brands fa-instagram fa-2xl" style="color: #ffffff;"></i>
+                </a>
+              </li>
+              <li class=" m-lg-5 mb-4">
+                <a class="text-white" href="#">
+                  <i class="fa-brands fa-linkedin fa-2xl" style="color: #ffffff;"></i>
+                </a>
+              </li>
+            </ul>
+            <ul>
+              <li class="text-white">
+                <p>Horario de atención:</p>
+                <p>Lunes a viernes de 9:30 am - 4:30 pm</p>
+              </li>
+              <li class="text-white">
+                <p>Dirección:</p>
+                <p>203 URB LA MACARENA LA PERLA CALLAO, Lima, Peru</p>
+              </li>
+              <li class="text-white">
+                <p>Email:</p>
+                <p>odontologianingle@gmail.com</p>
+              </li>
+              <li class="text-white">
+                <p>Celular:</p>
+                <p>+51 998 698 808</p>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-
-      <div class="col-lg-6 mt-5 mt-md-0 d-flex footer">
-        <ul class="ps-0">
-          <li class=" m-lg-5 mb-4">
-            <a class="text-white" target="_blank" href="https://www.facebook.com/profile.php?id=100040335201259&mibextid=ZbWKwL">
-              <i class="fa-brands fa-facebook-f fa-2xl" style="color: #ffffff;"></i>
-            </a>
-          </li>
-          <li class=" m-lg-5 mb-4">
-            <a class="text-white" href="#">
-              <i class="fa-brands fa-instagram fa-2xl" style="color: #ffffff;"></i>
-            </a>
-          </li>
-          <li class=" m-lg-5 mb-4">
-            <a class="text-white" href="#">
-              <i class="fa-brands fa-linkedin fa-2xl" style="color: #ffffff;"></i>
-            </a>
-          </li>
-        </ul>
-        <ul>
-          <li class="text-white">
-            <p>Horario de atención:</p>
-            <p>Lunes a viernes de 9:30 am - 4:30 pm</p>
-          </li>
-          <li class="text-white">
-            <p>Dirección:</p>
-            <p>203 URB LA MACARENA LA PERLA CALLAO, Lima, Peru</p>
-          </li>
-          <li class="text-white">
-            <p>Email:</p>
-            <p>odontologianingle@gmail.com</p>
-          </li>
-          <li class="text-white">
-            <p>Celular:</p>
-            <p>+51 998 698 808</p>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</footer>
+    </footer>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
   integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
