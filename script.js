@@ -48,15 +48,19 @@ animateCounter();
 
 // AOS.init();
 
-$(document).ready(function() {
-  var preloader = $('#preloader');
+// $(document).ready(function() {
+//   var preloader = $('#preloader');
 
-  // Mostrar el preloader
-  preloader.show();
+//   // Mostrar el preloader
+//   preloader.show();
 
-  // Ocultar el preloader después de 5 segundos (4000 milisegundos)
-  setTimeout(function() {
-    preloader.hide();
-  }, 500);
-});
+//   // Ocultar el preloader después de 5 segundos (4000 milisegundos)
+//   setTimeout(function() {
+//     preloader.hide();
+//   }, 500);
+// });
 
+window.addEventListener('load', function() {
+  var preloader = document.getElementById('preloader');
+  preloader.style.display = 'none';
+  });

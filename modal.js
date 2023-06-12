@@ -2,22 +2,22 @@ var openModalBtn = document.getElementById("openModal");
 var videoModal = new bootstrap.Modal(document.getElementById("videoModal"));
 var videoPlayer = document.getElementById("videoPlayer");
 
-openModalBtn.addEventListener("click", function() {
+openModalBtn.addEventListener("click", function () {
   videoModal.show();
 });
 
-videoModal.addEventListener("hide.bs.modal", function() {
+videoModal.addEventListener("hide.bs.modal", function () {
   videoPlayer.pause();
 });
 
 var openModalBtn = document.getElementById("openModal");
-  var videoModal = new bootstrap.Modal(document.getElementById("videoModal"));
-  var videoPlayer = document.getElementById("videoPlayer");
+var videoModal = new bootstrap.Modal(document.getElementById("videoModal"));
+var videoPlayer = document.getElementById("videoPlayer");
 
-  openModalBtn.addEventListener("click", function() {
-    videoModal.show();
-  });
+openModalBtn.addEventListener("click", function () {
+  videoModal.show();
+});
 
-  videoModal.addEventListener("hide.bs.modal", function() {
-    videoPlayer.pause();
-  });
+videoModal.addEventListener("hide.bs.modal", function () {
+  videoPlayer.pause();
+});
