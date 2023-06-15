@@ -20,3 +20,23 @@ $(".carousel").owlCarousel({
     }
 })
 
+<<<<<<< HEAD
+=======
+
+window.addEventListener('load', function() {
+    var preloader = document.getElementById('preloader');
+    preloader.style.display = 'none';
+    });
+
+// $(document).ready(function() {
+//     var preloader = $('#preloader');
+  
+//     // Mostrar el preloader
+//     preloader.show();
+  
+//     // Ocultar el preloader después de 5 segundos (4000 milisegundos)
+//     setTimeout(function() {
+//       preloader.hide();
+//     }, 500);
+//   });
+>>>>>>> 09162cface351050ee7be4d2e7344202212325df
