@@ -32,18 +32,35 @@ window.addEventListener('scroll', animateCounter);
 animateCounter();
 
 
-$(document).ready(function(){
-    $('.carousel').slick({
-      autoplay: true,
-      autoplaySpeed: 3000,
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      infinite: true,
-      dots: false,
-      arrows: false,
-      pauseOnHover: false,
-      pauseOnFocus: false
-    });
-  });
+// $(document).ready(function(){
+//     $('.carousel').slick({
+//       autoplay: true,
+//       autoplaySpeed: 3000,
+//       slidesToShow: 1,
+//       slidesToScroll: 1,
+//       infinite: true,
+//       dots: false,
+//       arrows: false,
+//       pauseOnHover: false,
+//       pauseOnFocus: false
+//     });
+//   });
 
-AOS.init();
+// AOS.init();
+
+// $(document).ready(function() {
+//   var preloader = $('#preloader');
+
+//   // Mostrar el preloader
+//   preloader.show();
+
+//   // Ocultar el preloader después de 5 segundos (4000 milisegundos)
+//   setTimeout(function() {
+//     preloader.hide();
+//   }, 500);
+// });
+
+window.addEventListener('load', function() {
+  var preloader = document.getElementById('preloader');
+  preloader.style.display = 'none';
+  });

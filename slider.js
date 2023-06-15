@@ -45,3 +45,20 @@ $("#slider").on("input change", (e)=>{
     // Update the position of the slider button
     $('.slider-button5').css('left', `calc(${sliderPos}% - 18px)`)
   });
+
+  // $(document).ready(function() {
+  //   var preloader = $('#preloader');
+  
+  //   // Mostrar el preloader
+  //   preloader.show();
+  
+  //   // Ocultar el preloader después de 5 segundos (4000 milisegundos)
+  //   setTimeout(function() {
+  //     preloader.hide();
+  //   }, 500);
+  // });
+
+  window.addEventListener('load', function() {
+    var preloader = document.getElementById('preloader');
+    preloader.style.display = 'none';
+    });
