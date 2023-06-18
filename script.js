@@ -31,36 +31,41 @@ function animateCounter() {
 window.addEventListener('scroll', animateCounter);
 animateCounter();
 
-
-// $(document).ready(function(){
-//     $('.carousel').slick({
-//       autoplay: true,
-//       autoplaySpeed: 3000,
-//       slidesToShow: 1,
-//       slidesToScroll: 1,
-//       infinite: true,
-//       dots: false,
-//       arrows: false,
-//       pauseOnHover: false,
-//       pauseOnFocus: false
-//     });
-//   });
-
-// AOS.init();
-
-// $(document).ready(function() {
-//   var preloader = $('#preloader');
-
-//   // Mostrar el preloader
-//   preloader.show();
-
-//   // Ocultar el preloader después de 5 segundos (4000 milisegundos)
-//   setTimeout(function() {
-//     preloader.hide();
-//   }, 500);
-// });
-
-window.addEventListener('load', function() {
+window.addEventListener('load', function () {
   var preloader = document.getElementById('preloader');
   preloader.style.display = 'none';
+});
+
+
+$(document).ready(function() {
+  var videoPlayer = document.getElementById("videoPlayer");
+  var videoPlayer2 = document.getElementById("videoPlayer2");
+
+  $("#mod").on("hidden.bs.modal", function () {
+    videoPlayer.pause();
   });
+
+  $("#mod").on("shown.bs.modal", function () {
+    videoPlayer.play();
+    openFullscreen(videoPlayer);
+  });
+
+  $("#mod2").on("hidden.bs.modal", function () {
+    videoPlayer2.pause();
+  });
+
+  $("#mod2").on("shown.bs.modal", function () {
+    videoPlayer2.play();
+    openFullscreen(videoPlayer2);
+  });
+
+  function openFullscreen(video) {
+    if (video.requestFullscreen) {
+      video.requestFullscreen();
+    } else if (video.webkitRequestFullscreen) { /* Safari */
+      video.webkitRequestFullscreen();
+    } else if (video.msRequestFullscreen) { /* IE11 */
+      video.msRequestFullscreen();
+    }
+  }
+});

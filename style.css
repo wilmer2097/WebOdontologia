@@ -178,16 +178,25 @@ header .nav-item .nav-link {
     background: rgb(0,129,253);
     background: linear-gradient(0deg, rgba(26, 144, 255,1) 0%, rgba(0,129,253,1) 100%);
   }
+  .cssss{
+    background-color: #ffffff;
+    border-radius: 10px;
+    margin: 20px;
+    width: 400px;
+    color: #1E66AA;
+  }
   
+  .cssss i{
+    font-size: 60px;
+    padding-top: 40px;
+  }
+
   .value {
     display: flex;
     justify-content: center;
-    border-radius: 10px;
-    background: #FFFFFF;
     font-size: 60px;
     font-weight: bold;
     color: #1E66AA;
-    margin-bottom: 20px;
   }
 
 /* detalles */
@@ -657,10 +666,10 @@ background: #009688;
 
 .modal-content {
   background-color: #0081FD;
-  margin: 10% auto;
+  margin: 50% auto;
   padding: 0px;
-  width: 80%;
-  max-width: 600px;
+  width: 100%;
+  max-width: auto;
 }
 
 .close {
