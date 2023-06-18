@@ -309,7 +309,7 @@ h2{
 
 .content .background-img {
 
-    background-image: url("./img_doc/2.jpg");
+    background-image: url("./img_doc/1.png");
 
 }
 
@@ -318,7 +318,7 @@ h2{
 
 .content .foreground-img {
 
-    background-image: url("./img_doc/1.jpg");
+    background-image: url("./img_doc/1.2.png");
 
     width: 50%;
 
@@ -329,7 +329,7 @@ h2{
 
 .content1 .background-img1 {
 
-    background-image: url("./img_doc/4.jpg");
+    background-image: url("./img_doc/2.png");
 
 }
 
@@ -338,7 +338,7 @@ h2{
 
 .content1 .foreground-img1 {
 
-    background-image: url("./img_doc/3.jpg");
+    background-image: url("./img_doc/2.1.png");
 
     width: 50%;
 
@@ -349,7 +349,7 @@ h2{
 
 .content2 .background-img2 {
 
-    background-image: url("./img_doc/6.jpg");
+    background-image: url("./img_doc/3.png");
 
 }
 
@@ -358,7 +358,7 @@ h2{
 
 .content2 .foreground-img2 {
 
-    background-image: url("./img_doc/5.jpg");
+    background-image: url("./img_doc/3.1.png");
 
     width: 50%;
 
@@ -369,7 +369,7 @@ h2{
 
 .content3 .background-img3 {
 
-    background-image: url("./img_doc/8.jpg");
+    background-image: url("./img_doc/4.png");
 
 }
 
@@ -378,7 +378,7 @@ h2{
 
 .content3 .foreground-img3 {
 
-    background-image: url("./img_doc/7.jpg");
+    background-image: url("./img_doc/4.1.png");
 
     width: 50%;
 
@@ -389,7 +389,7 @@ h2{
 
 .content4 .background-img4 {
 
-    background-image: url("./img_doc/10.jpg");
+    background-image: url("./img_doc/5.2.jpg");
 
 }
 
@@ -398,7 +398,7 @@ h2{
 
 .content4 .foreground-img4 {
 
-    background-image: url("./img_doc/9.jpg");
+    background-image: url("./img_doc/5.1.jpg");
 
     width: 50%;
 
@@ -655,18 +655,12 @@ h2{
 
 
 /* Footer */
-.nose{
-    background-color: #0081FD; /*BUSQUEN COLOR PARA CONTRASTAR ESTO Y QUE QUEDE*/
-  }
-  
-  
 .ondas {
     height: 100%;
     margin-top: -140px;
 }
 
-footer {
-    background: rgb(0, 129, 253);
+footer{
     background: linear-gradient(0deg, rgba(30,102,170,1) 0%, rgba(0,129,253,1) 100%);
 }
 
@@ -698,6 +692,7 @@ footer {
     }
 
 }
+
 
 /*onda*/
 .flex {
