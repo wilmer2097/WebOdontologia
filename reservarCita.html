@@ -55,6 +55,10 @@
   </a>
 
   <script>
+    window.addEventListener('load', function () {
+    var preloader = document.getElementById('preloader');
+    preloader.style.display = 'none';
+  });
     function enviar_mensaje() {
       var a = document.getElementById("chat-input");
       if ("" != a.value) {

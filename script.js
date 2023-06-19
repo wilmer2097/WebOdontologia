@@ -37,14 +37,36 @@ window.addEventListener('load', function () {
 });
 
 
-// var videoPlayer = document.getElementById('videoPlayer');
+// $(document).ready(function() {
+//   var videoPlayer = document.getElementById("play");
+//   var videoPlayer2 = document.getElementById("play2");
 
-// // Al abrir el modal, iniciar la reproducción del video
-// $('#mod').on('shown.bs.modal', function () {
-//   videoPlayer.play();
-// });
+//   $("#mod").on("hidden.bs.modal", function () {
+//     videoPlayer.pause();
+//     console.log("hola1231321");
+//   });
 
-// // Al cerrar el modal, detener la reproducción del video
-// $('#mod').on('hidden.bs.modal', function () {
-//   videoPlayer.pause();
+//   $("#mod").on("shown.bs.modal", function () {
+//     openFullscreen(videoPlayer);
+//     videoPlayer.autoplay = true;
+//     videoPlayer.load();
+//   });
+
+//   $("#mod2").on("hidden.bs.modal", function () {
+//     videoPlayer2.pause();
+//   });
+
+//   $("#mod2").on("shown.bs.modal", function () {
+//     openFullscreen(videoPlayer2);
+//   });
+
+//   function openFullscreen(video) {
+//     if (video.requestFullscreen) {
+//       video.requestFullscreen();
+//     } else if (video.webkitRequestFullscreen) { /* Safari */
+//       video.webkitRequestFullscreen();
+//     } else if (video.msRequestFullscreen) { /* IE11 */
+//       video.msRequestFullscreen();
+//     }
+//   }
 // });
