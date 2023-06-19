@@ -184,6 +184,10 @@ header .nav-item .nav-link {
 .main {
 
     padding-top: 100px;
+
+
+
+
 }
 
 
@@ -221,25 +225,38 @@ body {
 
 
 
-.content,
-
-.content1,
-
-.content2,
-
-.content3,
-
-.content4,
-
-.content5 {
+.content, .content1{
 
     position: relative;
 
-    width: 450px;
+    width: 280px;
 
-    height: 200px;
+    height: 620.8px;
 
     border: 2px solid white;
+
+}
+
+/* LAS MEDIDAS NO SON IGUALES EN AMBOS CASOS*/
+.content2{
+  position: relative;
+
+  width: 514px;
+
+  height: 510px;
+
+  border: 2px solid white;
+}
+
+.content3{
+
+  position: relative;
+
+  width: 456px;
+
+  height: 457.6px;
+
+  border: 2px solid white;
 
 }
 
@@ -306,7 +323,7 @@ h2{
 .content .background-img {
 
     background-image: url("./img_doc/1.png");
-
+    background-size: 280px 620.8px;
 }
 
 
@@ -314,9 +331,9 @@ h2{
 
 .content .foreground-img {
 
-    background-image: url("./img_doc/1.2.png");
-
+    background-image: url("./img_doc/1.1.png");
     width: 50%;
+    background-size: 280px 620.8px;
 
 }
 
@@ -326,6 +343,7 @@ h2{
 .content1 .background-img1 {
 
     background-image: url("./img_doc/2.png");
+    background-size: 280px 620.8px;
 
 }
 
@@ -335,7 +353,7 @@ h2{
 .content1 .foreground-img1 {
 
     background-image: url("./img_doc/2.1.png");
-
+    background-size: 280px 620.8px;
     width: 50%;
 
 }
@@ -366,6 +384,7 @@ h2{
 .content3 .background-img3 {
 
     background-image: url("./img_doc/4.png");
+    background-size: 456px 457.6px;
 
 }
 
@@ -375,7 +394,7 @@ h2{
 .content3 .foreground-img3 {
 
     background-image: url("./img_doc/4.1.png");
-
+    background-size: 456px 457.6px;
     width: 50%;
 
 }
@@ -385,7 +404,7 @@ h2{
 
 .content4 .background-img4 {
 
-    background-image: url("./img_doc/5.2.jpg");
+    background-image: url("./img_doc/10.jpg");
 
 }
 
@@ -394,7 +413,7 @@ h2{
 
 .content4 .foreground-img4 {
 
-    background-image: url("./img_doc/5.1.jpg");
+    background-image: url("./img_doc/9.jpg");
 
     width: 50%;
 
@@ -465,15 +484,7 @@ h2{
 
 .content .slider::-webkit-slider-thumb,
 
-.content1 .slider1::-webkit-slider-thumb,
-
-.content2 .slider2::-webkit-slider-thumb,
-
-.content3 .slider3::-webkit-slider-thumb,
-
-.content4 .slider4::-webkit-slider-thumb,
-
-.content5 .slider5::-webkit-slider-thumb {
+.content1 .slider1::-webkit-slider-thumb{
 
     -webkit-appearance: none;
 
@@ -481,7 +492,7 @@ h2{
 
     width: 6px;
 
-    height: 100px;
+    height: 620.8px;
 
     background: white;
 
@@ -489,7 +500,41 @@ h2{
 
 }
 
-@media(min-width: 768px) {
+.content2 .slider2::-webkit-slider-thumb{
+
+    -webkit-appearance: none;
+
+    appearance: none;
+
+    width: 6px;
+
+    height: 200px;
+
+    background: white;
+
+    cursor: pointer;
+
+}
+
+
+
+.content3 .slider3::-webkit-slider-thumb{
+
+    -webkit-appearance: none;
+
+    appearance: none;
+
+    width: 6px;
+
+    height: 457.6px;
+
+    background: white;
+
+    cursor: pointer;
+
+}
+
+/*@media(min-width: 768px) {
 
     .content .slider::-webkit-slider-thumb,
 
@@ -503,7 +548,7 @@ h2{
 
     .content5 .slider5::-webkit-slider-thumb {
 
-        height: 200px;
+        height: 500px;
 
     }
 
@@ -511,7 +556,7 @@ h2{
 
 
 
-}
+}*/
 
 
 
@@ -651,12 +696,18 @@ h2{
 
 
 /* Footer */
+.nose{
+    background-color: #0081FD; /*BUSQUEN COLOR PARA CONTRASTAR ESTO Y QUE QUEDE*/
+  }
+  
+  
 .ondas {
     height: 100%;
     margin-top: -140px;
 }
 
-footer{
+footer {
+    background: rgb(0, 129, 253);
     background: linear-gradient(0deg, rgba(30,102,170,1) 0%, rgba(0,129,253,1) 100%);
 }
 
@@ -688,7 +739,6 @@ footer{
     }
 
 }
-
 
 /*onda*/
 .flex {
