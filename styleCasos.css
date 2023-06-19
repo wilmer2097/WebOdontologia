@@ -243,7 +243,7 @@ body {
 
   width: 514px;
 
-  height: 510px;
+  height: 776px;
 
   border: 2px solid white;
 }
@@ -260,7 +260,7 @@ body {
 
 }
 
-
+/* proporcion mas pequeña*/
 
 
 @media(max-width: 768px) {
@@ -354,6 +354,7 @@ h2{
 
     background-image: url("./img_doc/2.1.png");
     background-size: 280px 620.8px;
+    
     width: 50%;
 
 }
@@ -364,6 +365,7 @@ h2{
 .content2 .background-img2 {
 
     background-image: url("./img_doc/3.png");
+    background-size: 514px 776px;
 
 }
 
@@ -373,7 +375,7 @@ h2{
 .content2 .foreground-img2 {
 
     background-image: url("./img_doc/3.1.png");
-
+    background-size: 514px 510px;
     width: 50%;
 
 }
@@ -534,7 +536,8 @@ h2{
 
 }
 
-/*@media(min-width: 768px) {
+/* en esta parte debo hacer las proporciones para el telefono*/
+/*@media(max-width: 768px) {
 
     .content .slider::-webkit-slider-thumb,
 
@@ -548,7 +551,7 @@ h2{
 
     .content5 .slider5::-webkit-slider-thumb {
 
-        height: 500px;
+        height: 200px;
 
     }
 
@@ -557,7 +560,6 @@ h2{
 
 
 }*/
-
 
 
 
