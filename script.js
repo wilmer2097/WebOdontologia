@@ -37,14 +37,14 @@ window.addEventListener('load', function () {
 });
 
 
-var videoPlayer = document.getElementById('videoPlayer');
+// var videoPlayer = document.getElementById('videoPlayer');
 
-// Al abrir el modal, iniciar la reproducción del video
-$('#mod').on('shown.bs.modal', function () {
-  videoPlayer.play();
-});
+// // Al abrir el modal, iniciar la reproducción del video
+// $('#mod').on('shown.bs.modal', function () {
+//   videoPlayer.play();
+// });
 
-// Al cerrar el modal, detener la reproducción del video
-$('#mod').on('hidden.bs.modal', function () {
-  videoPlayer.pause();
-});
+// // Al cerrar el modal, detener la reproducción del video
+// $('#mod').on('hidden.bs.modal', function () {
+//   videoPlayer.pause();
+// });
