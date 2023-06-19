@@ -280,8 +280,6 @@ body {
     height: 274.56px;
   }
 
-
-  /*que la imagen sea del mismo tamaño del contenedor*/
   .content .background-img {
 
     background-image: url("./img_doc/1.png");
@@ -316,7 +314,6 @@ body {
 
     background-image: url("./img_doc/2.1.png");
     background-size: 168px 372.48px;
-
     width: 50%;
 
   }
@@ -327,7 +324,7 @@ body {
   .content2 .background-img2 {
 
     background-image: url("./img_doc/3.jpg");
-    background-size: 456px 457.6px;
+    background-size: 237px 274.56px;
 
   }
 
@@ -337,7 +334,7 @@ body {
   .content2 .foreground-img2 {
 
     background-image: url("./img_doc/3.1.png");
-    background-size: 456px 457.6px;
+    background-size: 237px 274.56px;
     width: 50%;
 
   }
@@ -348,7 +345,7 @@ body {
   .content3 .background-img3 {
 
     background-image: url("./img_doc/4.png");
-    background-size: 456px 457.6px;
+    background-size: 237px 274.56px;
 
   }
 
@@ -358,10 +355,46 @@ body {
   .content3 .foreground-img3 {
 
     background-image: url("./img_doc/4.1.png");
-    background-size: 456px 457.6px;
+    background-size: 237px 274.56px;
     width: 50%;
 
   }
+
+  
+.content .slider::-webkit-slider-thumb,
+
+.content1 .slider1::-webkit-slider-thumb {
+
+  -webkit-appearance: none;
+
+  appearance: none;
+
+  width: 6px;
+
+  height: 372.48px;
+
+  background: white;
+
+  cursor: pointer;
+
+}
+
+.content2 .slider2::-webkit-slider-thumb,
+.content3 .slider3::-webkit-slider-thumb {
+
+  -webkit-appearance: none;
+
+  appearance: none;
+
+  width: 6px;
+
+  height: 274.56px;
+
+  background: white;
+
+  cursor: pointer;
+
+}
 
 }
 
@@ -398,85 +431,123 @@ h2 {
 
 
 
-.content .background-img {
+@media (min-width:769px) {
+  .content .background-img {
 
-  background-image: url("./img_doc/1.png");
-  background-size: 280px 620.8px;
+    background-image: url("./img_doc/1.png");
+    background-size: 280px 620.8px;
+  }
+  
+  
+  
+  
+  .content .foreground-img {
+  
+    background-image: url("./img_doc/1.1.png");
+    width: 50%;
+    background-size: 280px 620.8px;
+  
+  }
+  
+  
+  
+  
+  .content1 .background-img1 {
+  
+    background-image: url("./img_doc/2.png");
+    background-size: 280px 620.8px;
+  
+  }
+  
+  
+  
+  
+  .content1 .foreground-img1 {
+  
+    background-image: url("./img_doc/2.1.png");
+    background-size: 280px 620.8px;
+  
+    width: 50%;
+  
+  }
+  
+  
+  
+  
+  .content2 .background-img2 {
+  
+    background-image: url("./img_doc/3.jpg");
+    background-size: 456px 457.6px;
+  
+  }
+  
+  
+  
+  
+  .content2 .foreground-img2 {
+  
+    background-image: url("./img_doc/3.1.png");
+    background-size: 456px 457.6px;
+    width: 50%;
+  
+  }
+  
+  
+  
+  
+  .content3 .background-img3 {
+  
+    background-image: url("./img_doc/4.png");
+    background-size: 456px 457.6px;
+  
+  }
+  
+  
+  
+  
+  .content3 .foreground-img3 {
+  
+    background-image: url("./img_doc/4.1.png");
+    background-size: 456px 457.6px;
+    width: 50%;
+  
+  }
+
+  
+.content .slider::-webkit-slider-thumb,
+
+.content1 .slider1::-webkit-slider-thumb {
+
+  -webkit-appearance: none;
+
+  appearance: none;
+
+  width: 6px;
+
+  height: 620.8px;
+
+  background: white;
+
+  cursor: pointer;
+
 }
 
+.content2 .slider2::-webkit-slider-thumb,
+.content3 .slider3::-webkit-slider-thumb {
 
+  -webkit-appearance: none;
 
+  appearance: none;
 
-.content .foreground-img {
+  width: 6px;
 
-  background-image: url("./img_doc/1.1.png");
-  width: 50%;
-  background-size: 280px 620.8px;
+  height: 457.6px;
 
-}
+  background: white;
 
-
-
-
-.content1 .background-img1 {
-
-  background-image: url("./img_doc/2.png");
-  background-size: 280px 620.8px;
+  cursor: pointer;
 
 }
-
-
-
-
-.content1 .foreground-img1 {
-
-  background-image: url("./img_doc/2.1.png");
-  background-size: 280px 620.8px;
-
-  width: 50%;
-
-}
-
-
-
-
-.content2 .background-img2 {
-
-  background-image: url("./img_doc/3.jpg");
-  background-size: 456px 457.6px;
-
-}
-
-
-
-
-.content2 .foreground-img2 {
-
-  background-image: url("./img_doc/3.1.png");
-  background-size: 456px 457.6px;
-  width: 50%;
-
-}
-
-
-
-
-.content3 .background-img3 {
-
-  background-image: url("./img_doc/4.png");
-  background-size: 456px 457.6px;
-
-}
-
-
-
-
-.content3 .foreground-img3 {
-
-  background-image: url("./img_doc/4.1.png");
-  background-size: 456px 457.6px;
-  width: 50%;
-
 }
 
 
@@ -542,57 +613,7 @@ h2 {
 
 
 
-.content .slider::-webkit-slider-thumb,
 
-.content1 .slider1::-webkit-slider-thumb {
-
-  -webkit-appearance: none;
-
-  appearance: none;
-
-  width: 6px;
-
-  height: 620.8px;
-
-  background: white;
-
-  cursor: pointer;
-
-}
-
-.content2 .slider2::-webkit-slider-thumb {
-
-  -webkit-appearance: none;
-
-  appearance: none;
-
-  width: 6px;
-
-  height: 457.6px;
-
-  background: white;
-
-  cursor: pointer;
-
-}
-
-
-
-.content3 .slider3::-webkit-slider-thumb {
-
-  -webkit-appearance: none;
-
-  appearance: none;
-
-  width: 6px;
-
-  height: 457.6px;
-
-  background: white;
-
-  cursor: pointer;
-
-}
 
 /* en esta parte debo hacer las proporciones para el telefono*/
 /*@media(max-width: 768px) {
