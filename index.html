@@ -418,48 +418,26 @@
                     <p class="card-text text-center text-sm-center text-black pe-md-5 pb-3">Diego</p>
 
                     <!-- Botón para abrir el modal -->
-
-                    <button data-bs-toggle="modal" data-bs-target="#mod" class="btn btn-outline-light mb-1">Ver
-                      Video</button>
-
-
-
+                    <button type="button" class="btn btn-outline-light mb-1" data-bs-toggle="modal"
+                      data-bs-target="#mod">Ver Video</button>
 
                     <!-- Modal de video -->
-
-                    <div class="modal" id="mod" tabindex="-1">
-
-                      <div class="modal-dialog modal-dialog-centered">
-
+                    <div class="modal fade" id="mod" tabindex="-1" aria-labelledby="modLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered modal-lg">
                         <div class="modal-content">
-
-                          <div class="modal-header">
-
-                            <h5 class="modal-title text-white">Reproducir Video</h5>
-
+                          <div class="modal-header" style="background-color: #0081FD;">
+                            <h5 class="modal-title text-white" id="modLabel">Reproducir Video</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-
                           </div>
-
                           <div class="modal-body">
-
                             <div class="embed-responsive embed-responsive-16by9">
-
-                              <iframe width="560" height="315" src="https://www.youtube.com/embed/PDMveP1APeg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
+                              <iframe class="embed-responsive-item" id="videoPlayer"
+                                src="https://www.youtube.com/embed/PDMveP1APeg" allowfullscreen></iframe>
                             </div>
-
                           </div>
-
-
-
                         </div>
-
                       </div>
-
                     </div>
-
-                    <!-- modal -->
 
                   </div>
 
@@ -521,7 +499,10 @@
 
                             <div class="embed-responsive embed-responsive-16by9">
 
-                              <iframe width="560" height="315" src="https://www.youtube.com/embed/bTk4G8gMJ1o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                              <iframe width="560" height="315" src="https://www.youtube.com/embed/bTk4G8gMJ1o"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
 
                             </div>
 
@@ -583,8 +564,7 @@
 
     </section>
 
-    <section data-aos="fade-up"
-    data-aos-anchor-placement="top-center" id="elegirnos">
+    <section data-aos="fade-up" data-aos-anchor-placement="top-center" id="elegirnos">
 
       <div class="container-fluid elegirnos d-flex flex-column flex-md-row align-items-center">
 
@@ -676,8 +656,8 @@
 
       <div class="d-flex flex-wrap">
 
-        <div data-aos="fade-up"
-        data-aos-duration="3000" class="izquierda d-flex justify-content-center col-12 col-md-6 flex-column text-center pt-5">
+        <div data-aos="fade-up" data-aos-duration="3000"
+          class="izquierda d-flex justify-content-center col-12 col-md-6 flex-column text-center pt-5">
 
           <i class="fa-solid fa-calendar-days fa-2xl" style="color: #1e66aa;"></i>
 
@@ -693,8 +673,8 @@
 
         </div>
 
-        <div data-aos="fade-up"
-        data-aos-duration="3000" class="derecha d-flex text-center justify-content-center col-12 col-md-6 flex-column pt-5">
+        <div data-aos="fade-up" data-aos-duration="3000"
+          class="derecha d-flex text-center justify-content-center col-12 col-md-6 flex-column pt-5">
 
           <i class="fa-solid fa-location-dot fa-2xl" style="color: #ffffff;"></i>
 

@@ -37,35 +37,14 @@ window.addEventListener('load', function () {
 });
 
 
-$(document).ready(function() {
-  var videoPlayer = document.getElementById("videoPlayer");
-  var videoPlayer2 = document.getElementById("videoPlayer2");
+var videoPlayer = document.getElementById('videoPlayer');
 
-  $("#mod").on("hidden.bs.modal", function () {
-    videoPlayer.pause();
-  });
+// Al abrir el modal, iniciar la reproducción del video
+$('#mod').on('shown.bs.modal', function () {
+  videoPlayer.play();
+});
 
-  $("#mod").on("shown.bs.modal", function () {
-    videoPlayer.play();
-    openFullscreen(videoPlayer);
-  });
-
-  $("#mod2").on("hidden.bs.modal", function () {
-    videoPlayer2.pause();
-  });
-
-  $("#mod2").on("shown.bs.modal", function () {
-    videoPlayer2.play();
-    openFullscreen(videoPlayer2);
-  });
-
-  function openFullscreen(video) {
-    if (video.requestFullscreen) {
-      video.requestFullscreen();
-    } else if (video.webkitRequestFullscreen) { /* Safari */
-      video.webkitRequestFullscreen();
-    } else if (video.msRequestFullscreen) { /* IE11 */
-      video.msRequestFullscreen();
-    }
-  }
+// Al cerrar el modal, detener la reproducción del video
+$('#mod').on('hidden.bs.modal', function () {
+  videoPlayer.pause();
 });
