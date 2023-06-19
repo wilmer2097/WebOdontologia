@@ -297,9 +297,6 @@ body {
 
   }
 
-
-
-
   .content1 .background-img1 {
 
     background-image: url("./img_doc/2.png");
@@ -357,8 +354,14 @@ body {
     background-image: url("./img_doc/4.1.png");
     background-size: 237px 274.56px;
     width: 50%;
-
   }
+
+
+  
+
+  
+
+}
 
   
 .content .slider::-webkit-slider-thumb,
@@ -396,8 +399,6 @@ body {
 
 }
 
-}
-
 
 h2 {
   text-align: center;
@@ -431,11 +432,12 @@ h2 {
 
 
 
-@media (min-width:769px) {
+@media (min-width:768px) {
   .content .background-img {
 
     background-image: url("./img_doc/1.png");
     background-size: 280px 620.8px;
+
   }
   
   
