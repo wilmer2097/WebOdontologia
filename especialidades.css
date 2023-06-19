@@ -157,11 +157,15 @@ header .nav-item .nav-link {
 }
 
 #c5 {
-    background: url(img/odontopediatria.jpeg) no-repeat center center/cover;
+    background: url(img/odnto2.png) no-repeat center center/cover;
 }
 
 #c6 {
-    background: url(img/estetica.jpeg) no-repeat center center/cover;
+    background: url(img/estdental.png) no-repeat center center/cover;
+}
+
+#c7 {
+  background: url(img/bucomaxi.png) no-repeat center center/cover;
 }
 
 .owl-dots {
@@ -268,6 +272,10 @@ header .nav-item .nav-link {
 
 
 /* Footer */
+.nose{
+  background-color: #0081FD; /*BUSQUEN COLOR PARA CONTRASTAR ESTO Y QUE QUEDE*/
+}
+
 .ondas {
     height: 100%;
     margin-top: -140px;
