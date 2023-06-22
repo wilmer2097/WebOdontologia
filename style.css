@@ -172,8 +172,7 @@ header .nav-item .nav-link {
     padding: 50px 20px;
     justify-content: space-around;
     align-items: center;
-    background: rgb(0,129,253);
-    background: linear-gradient(0deg, rgba(26, 144, 255,1) 0%, rgba(0,129,253,1) 100%);
+    background-color: #0081FD;
   }
   .cssss{
     background-color: #ffffff;
@@ -204,7 +203,7 @@ header .nav-item .nav-link {
 }
 .detalles .derecha{
     height: 470px;
-    background: linear-gradient(0deg, rgba(26, 144, 255,1) 0%, rgba(0,129,253,1) 100%);
+    background-color: #0081FD;
 }
 
 
