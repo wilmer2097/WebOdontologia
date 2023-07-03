@@ -282,7 +282,7 @@ body {
 
   .content .background-img {
 
-    background-image: url("./img_doc/1-0.png");
+    background-image: url("./img_doc/1.png");
     background-size: 168px 372.48px;
   }
 
@@ -291,7 +291,7 @@ body {
 
   .content .foreground-img {
 
-    background-image: url("./img_doc/1-1.png");
+    background-image: url("./img_doc/1.1.png");
     width: 50%;
     background-size: 168px 372.48px;
 
@@ -299,7 +299,7 @@ body {
 
   .content1 .background-img1 {
 
-    background-image: url("./img_doc/2-0.png");
+    background-image: url("./img_doc/2.png");
     background-size: 168px 372.48px;
 
   }
@@ -309,7 +309,7 @@ body {
 
   .content1 .foreground-img1 {
 
-    background-image: url("./img_doc/2-1.png");
+    background-image: url("./img_doc/2.1.png");
     background-size: 168px 372.48px;
     width: 50%;
 
@@ -320,7 +320,7 @@ body {
 
   .content2 .background-img2 {
 
-    background-image: url("./img_doc/3-0.jpg");
+    background-image: url("./img_doc/3.jpg");
     background-size: 237px 274.56px;
 
   }
@@ -330,7 +330,7 @@ body {
 
   .content2 .foreground-img2 {
 
-    background-image: url("./img_doc/3-1.png");
+    background-image: url("./img_doc/3.1.png");
     background-size: 237px 274.56px;
     width: 50%;
 
@@ -341,7 +341,7 @@ body {
 
   .content3 .background-img3 {
 
-    background-image: url("./img_doc/4-0.png");
+    background-image: url("./img_doc/4.png");
     background-size: 237px 274.56px;
 
   }
@@ -351,7 +351,7 @@ body {
 
   .content3 .foreground-img3 {
 
-    background-image: url("./img_doc/4-1.png");
+    background-image: url("./img_doc/4.1.png");
     background-size: 237px 274.56px;
     width: 50%;
   }
