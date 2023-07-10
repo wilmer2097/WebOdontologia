@@ -230,9 +230,9 @@ body {
 
   position: relative;
 
-  width: 280px;
+  width: 460px;
 
-  height: 620.8px;
+  height: 241px;
 
   border: 2px solid white;
 
@@ -240,9 +240,9 @@ body {
 
 .content2 {
   position: relative;
-  width: 456px;
+  width: 460px;
 
-  height: 457.6px;
+  height: 241px;
 
   border: 2px solid white;
 }
@@ -251,9 +251,9 @@ body {
 
   position: relative;
 
-  width: 456px;
+  width: 460px;
 
-  height: 457.6px;
+  height: 241px;
 
   border: 2px solid white;
 
@@ -268,22 +268,21 @@ body {
 
   .content1 {
 
-    width: 168px;
+    width: 300px;
 
-    height: 372.48px;
+    height: 156.65px;
   }
 
   .content2,
   .content3 {
-    width: 237px;
+    width: 300px;
 
-    height: 274.56px;
+    height: 156.65px;
   }
 
   .content .background-img {
 
-    background-image: url("./img_doc/1.png");
-    background-size: 168px 372.48px;
+    background-image: url("./img_doc/1-1.png");
   }
 
 
@@ -291,16 +290,15 @@ body {
 
   .content .foreground-img {
 
-    background-image: url("./img_doc/1.1.png");
+    background-image: url("./img_doc/1-0.png");
     width: 50%;
-    background-size: 168px 372.48px;
 
   }
 
   .content1 .background-img1 {
 
-    background-image: url("./img_doc/2.png");
-    background-size: 168px 372.48px;
+    background-image: url("./img_doc/2-1.png");
+    
 
   }
 
@@ -309,8 +307,8 @@ body {
 
   .content1 .foreground-img1 {
 
-    background-image: url("./img_doc/2.1.png");
-    background-size: 168px 372.48px;
+    background-image: url("./img_doc/2-0.png");
+    
     width: 50%;
 
   }
@@ -320,8 +318,8 @@ body {
 
   .content2 .background-img2 {
 
-    background-image: url("./img_doc/3.jpg");
-    background-size: 237px 274.56px;
+    background-image: url("./img_doc/3-1.png");
+
 
   }
 
@@ -330,8 +328,8 @@ body {
 
   .content2 .foreground-img2 {
 
-    background-image: url("./img_doc/3.1.png");
-    background-size: 237px 274.56px;
+    background-image: url("./img_doc/3-0.png");
+
     width: 50%;
 
   }
@@ -341,8 +339,8 @@ body {
 
   .content3 .background-img3 {
 
-    background-image: url("./img_doc/4.png");
-    background-size: 237px 274.56px;
+    background-image: url("./img_doc/4-1.png");
+
 
   }
 
@@ -351,8 +349,8 @@ body {
 
   .content3 .foreground-img3 {
 
-    background-image: url("./img_doc/4.1.png");
-    background-size: 237px 274.56px;
+    background-image: url("./img_doc/4-0.png");
+
     width: 50%;
   }
 
@@ -374,7 +372,7 @@ body {
 
   width: 6px;
 
-  height: 372.48px;
+  height: 156.65px;
 
   background: white;
 
@@ -391,7 +389,7 @@ body {
 
   width: 6px;
 
-  height: 274.56px;
+  height: 156.65px;
 
   background: white;
 
@@ -435,84 +433,78 @@ h2 {
 @media (min-width:768px) {
   .content .background-img {
 
-    background-image: url("./img_doc/1.png");
-    background-size: 280px 620.8px;
+    background-image: url("./img_doc/1-1.png");
+    
+  }
+
+
+
+
+  .content .foreground-img {
+
+    background-image: url("./img_doc/1-0.png");
+    width: 50%;
+    
 
   }
-  
-  
-  
-  
-  .content .foreground-img {
-  
-    background-image: url("./img_doc/1.1.png");
-    width: 50%;
-    background-size: 280px 620.8px;
-  
-  }
-  
-  
-  
-  
+
   .content1 .background-img1 {
-  
-    background-image: url("./img_doc/2.png");
-    background-size: 280px 620.8px;
-  
+
+    background-image: url("./img_doc/2-1.png");
+    
+
   }
-  
-  
-  
-  
+
+
+
+
   .content1 .foreground-img1 {
-  
-    background-image: url("./img_doc/2.1.png");
-    background-size: 280px 620.8px;
-  
+
+    background-image: url("./img_doc/2-0.png");
+    
     width: 50%;
-  
+
   }
-  
-  
-  
-  
+
+
+
+
   .content2 .background-img2 {
-  
-    background-image: url("./img_doc/3.jpg");
-    background-size: 456px 457.6px;
-  
+
+    background-image: url("./img_doc/3-1.png");
+
+
   }
-  
-  
-  
-  
+
+
+
+
   .content2 .foreground-img2 {
-  
-    background-image: url("./img_doc/3.1.png");
-    background-size: 456px 457.6px;
+
+    background-image: url("./img_doc/3-0.png");
+
     width: 50%;
-  
+
   }
-  
-  
-  
-  
+
+
+
+
   .content3 .background-img3 {
-  
-    background-image: url("./img_doc/4.png");
-    background-size: 456px 457.6px;
-  
+
+    background-image: url("./img_doc/4-1.png");
+
+
   }
-  
-  
-  
-  
+
+
+
+
   .content3 .foreground-img3 {
-  
-    background-image: url("./img_doc/4.1.png");
-    background-size: 456px 457.6px;
+
+    background-image: url("./img_doc/4-0.png");
+
     width: 50%;
-  
   }
 
   
@@ -526,7 +518,7 @@ h2 {
 
   width: 6px;
 
-  height: 620.8px;
+  height: 241px;
 
   background: white;
 
@@ -543,7 +535,7 @@ h2 {
 
   width: 6px;
 
-  height: 457.6px;
+  height: 241px;
 
   background: white;
 
