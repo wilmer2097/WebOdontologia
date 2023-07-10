@@ -413,7 +413,7 @@
 
                       opciones para tomar una decisión informada.</p>
 
-                    <p class="card-text text-center text-sm-center text-black pe-md-5 pb-3">Diego</p>
+                    <p class="card-text text-center text-sm-center text-white pe-md-5 pb-3">PACIENTE: DIEGO GARRIDO CARBAJAL</p>
 
                     <!-- Botón para abrir el modal -->
 
@@ -451,7 +451,7 @@
 
                       opciones para tomar una decisión informada.</p>
 
-                    <p class="card-text text-center text-sm-center text-black pe-md-5 pb-3">Julieta</p>
+                    <p class="card-text text-center text-sm-center text-white pe-md-5 pb-3">PACIENTE: JULIA MONTES DE OCA</p>
 
                     <!-- Botón para abrir el modal -->
 
@@ -564,7 +564,7 @@
 
           <div class="text-center"><i class="fa-solid fa-users-between-lines fa-2xl style=" color: #1e66aa;"></i></div>
 
-          <div class="value" akhi="920" suffix="" data-visible="false">0</div>
+          <div class="value" akhi="2000" data-prefix="+" suffix="" data-visible="false">0</div>
 
           <h2 class="text-center">Pacientes Atendidos</h2>
 

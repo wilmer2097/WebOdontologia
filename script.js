@@ -6,20 +6,21 @@ function animateCounter() {
     const rect = counter.getBoundingClientRect();
     const windowHeight = window.innerHeight;
 
-    if (rect.top < windowHeight && counter.getAttribute('data-visible') === 'false') {
+    if (rect.top < windowHeight && counter.getAttribute('data-visible') !== 'true') {
       counter.setAttribute('data-visible', 'true');
       const value = +counter.getAttribute('akhi');
       const suffix = counter.getAttribute('suffix');
-      const increment = Math.ceil(value / (speed));
+      const prefix = counter.getAttribute('data-prefix');
+      const increment = Math.ceil(value / speed);
       let data = 0;
 
       function updateCounter() {
         if (data < value) {
           data = Math.min(data + increment, value);
-          counter.innerText = `${data}${suffix}`;
+          counter.textContent = `${prefix ? prefix : ''}${data}${suffix}`;
           requestAnimationFrame(updateCounter);
         } else {
-          counter.innerHTML = `${value}${suffix}`;
+          counter.textContent = `${prefix ? prefix : ''}${value}${suffix}`;
         }
       }
 
@@ -28,13 +29,14 @@ function animateCounter() {
   });
 }
 
-window.addEventListener('scroll', animateCounter);
-animateCounter();
-
-window.addEventListener('load', function () {
+function handlePreloader() {
   var preloader = document.getElementById('preloader');
   preloader.style.display = 'none';
-});
+}
+
+window.addEventListener('scroll', animateCounter);
+window.addEventListener('load', handlePreloader);
+
 
 
 // $(document).ready(function() {
