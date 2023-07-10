@@ -19,6 +19,7 @@
     integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 
   <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.12/dist/sweetalert2.min.css" rel="stylesheet">
 
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
@@ -228,7 +229,7 @@
 
       <div class="container-fluid">
 
-        <a class="logo navbar-brand ps-3" href="index.html">
+        <a class="logo navbar-brand ps-3" href="index.php">
 
           <img class="img-fluid" width="180" src="img/logo.png" alt="logo">
 
@@ -258,7 +259,7 @@
 
               <li class="nav-item">
 
-                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                <a class="nav-link active" aria-current="page" href="index.php">Inicio</a>
 
               </li>
 
@@ -722,7 +723,7 @@
 
               <li class=" m-lg-5 mb-4">
 
-                <a class="text-white" href="https://www.instagram.com/odontologianingle/">
+                <a class="text-white" target="_blank" href="https://www.instagram.com/odontologianingle/">
 
                   <i class="fa-brands fa-instagram fa-2xl" style="color: #ffffff;"></i>
 
@@ -732,7 +733,7 @@
 
               <li class=" m-lg-5 mb-4">
 
-                <a class="text-white" href="https://www.linkedin.com/in/gloria-maria-%C3%B1ingle-mansilla-03bab3188/">
+                <a class="text-white" target="_blank" href="https://www.linkedin.com/in/gloria-maria-%C3%B1ingle-mansilla-03bab3188/">
 
                   <i class="fa-brands fa-linkedin fa-2xl" style="color: #ffffff;"></i>
 
@@ -773,6 +774,9 @@
                 <p>Celular:</p>
 
                 <p>+51 998 698 808</p>
+                <button type="button" class="btn btn-light mt-3" data-bs-toggle="modal" data-bs-target="#subscriptionModal">
+                  Suscríbete ahora
+                  </button>
 
               </li>
 
@@ -785,6 +789,33 @@
       </div>
 
     </footer>
+      <!-- Modal -->
+      <div class="modal fade" id="subscriptionModal" tabindex="-1" aria-labelledby="subscriptionModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="subscriptionModalLabel">Formulario de Suscripción</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-white">
+              <form id="myForm" action="suscripcion.php" method="post">
+                <div class="mb-3">
+                  <label for="nombre" class="form-label">Nombre:</label>
+                  <input type="text" class="form-control" id="nombre" name="nombre" required>
+                </div>
+  
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email:</label>
+                  <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+  
+                <button type="submit" class="btn btn-light">Suscribirse</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
      <!-- Modal de video -->
 
      <div class="modal" id="mod" tabindex="-1">
@@ -861,8 +892,10 @@
 
 <script src="https://code.jquery.com/jquery-3.7.0.slim.js"
   integrity="sha256-7GO+jepT9gJe9LB4XFf8snVOjX3iYNb0FHYr5LI1N5c=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.12/dist/sweetalert2.all.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
   integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="script.js"></script>
+<script src="FORMULARIO.js"></script>
 </html>
