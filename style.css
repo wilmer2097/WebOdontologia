@@ -10,7 +10,7 @@ html{
 }
 
 body {
-    background-color: #0081FD;
+    background-color: #0071ff;
     margin: 0;
     padding: 0;
     font-family: 'Lexend', sans-serif;
@@ -48,21 +48,21 @@ header .nav-item .nav-link {
 .header .nav-link a {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
-    color: #0081FD;
+    color: #0071ff;
     text-decoration: none;
   }
 
 .header .nav-item .nav-link:hover{
-    color: #1E66AA;
+    color: #0071ff;
     transform: scale(1.1);
 }
 .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
-    color: #0081FD;
+    color: #0071ff;
 }
 
 .header .nav-link{
     font-weight: 700;
-    color: #0081FD;
+    color: #0071ff;
     text-decoration: none;
 }
 
@@ -71,8 +71,8 @@ header .nav-item .nav-link {
     font-weight: 700;
     color: #FFFFFF;
     padding: 9px 25px;
-    background-color: #0081FD;
-    border: 2px solid #1E66AA;
+    background-color: #0071ff;
+    border: 2px solid #0071ff;
     border-radius: 20px;
     cursor: pointer;
     transition: all 0.3s ease 0s;
@@ -80,7 +80,7 @@ header .nav-item .nav-link {
 
 .header .btn button:hover{
     background-color: #FFFFFF;
-    color: #0081FD;
+    color: #0071ff;
     transform: scale(1.1);
 }
 
@@ -99,7 +99,7 @@ header .nav-item .nav-link {
 /* Nosotros */
 .nosotros{  
     font-family: 'Lexend', sans-serif;
-    color: #1E66AA;
+    color: #0071ff;
     background-color: #FFFFFF;
 }
 .nosotros .titulo{
@@ -118,7 +118,7 @@ header .nav-item .nav-link {
 .texto{
     font-family: 'Lexend', sans-serif;
     font-weight: 700px;
-    background-color: #0081FD;
+    background-color: #0071ff;
     margin-bottom: -10px;
 }
 
@@ -162,7 +162,7 @@ header .nav-item .nav-link {
 .elegirnos .titulo{
     font-family: 'Lexend', sans-serif;
     font-weight: 700;
-    color: #1E66AA;
+    color: #0071ff;
 }
 .elegirnos .descripcion{
     font-family: 'Lexend', sans-serif;
@@ -176,14 +176,14 @@ header .nav-item .nav-link {
     padding: 50px 20px;
     justify-content: space-around;
     align-items: center;
-    background-color: #0081FD;
+    background-color: #0071ff;
   }
   .cssss{
     background-color: #ffffff;
     border-radius: 10px;
     margin: 20px;
     width: 400px;
-    color: #1E66AA;
+    color: #0071ff;
   }
   
   .cssss i{
@@ -196,18 +196,18 @@ header .nav-item .nav-link {
     justify-content: center;
     font-size: 60px;
     font-weight: bold;
-    color: #1E66AA;
+    color: #0071ff;
   }
 
 /* detalles */
 .detalles .izquierda{
     height: 470px;
     background-color: #FFFFFF;
-    color: #1E66AA;
+    color: #0071ff;
 }
 .detalles .derecha{
     height: 470px;
-    background-color: #0081FD;
+    background-color: #0071ff;
 }
 
 
@@ -218,7 +218,7 @@ header .nav-item .nav-link {
 }
 
 footer{
-  background: linear-gradient(0deg, rgba(30,102,170,1) 0%, rgba(0,129,253,1) 100%);
+  background: linear-gradient(0deg, rgba(0, 113, 255,1) 0%, rgba(0,129,253,1) 100%);
 }
 
 .footer ul {
@@ -230,7 +230,7 @@ footer{
 }
 
 .footer_datos {
-    color: #1E66AA;
+    color: #0071ff;
     background-color: #fff;
     border-radius: 50%;
     height: 150px;
@@ -310,14 +310,14 @@ footer{
 /* reservarCita */
 .reservarCita {
   margin-top: 86px;
-  background-color: #0081FD;
+  background-color: #0071ff;
   padding-bottom: 100px;
 }
 
 
 /* Contacto */
 .contacto_container {
-    background-color: #0081FD;
+    background-color: #0071ff;
     margin: 86px;
     box-shadow: 19px 6px 34px 0px #000000a8;
 }
@@ -588,7 +588,7 @@ background: #009688;
     left: 0;
     width: 100%;
     height: 100%;
-    background: #0081FD;
+    background: #0071ff;
     z-index: 9999;
     display: flex;
     flex-direction: column;
@@ -653,6 +653,6 @@ background: #009688;
   
 /* Modal video */
 .modal-content {
-  background-color: #0081FD;
+  background-color: #0071ff;
 }
 
