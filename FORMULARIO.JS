@@ -27,7 +27,7 @@ document.getElementById("myForm").addEventListener("submit", function(event) {
 
     // Envía los datos mediante AJAX a suscripcion.php
     var xhr = new XMLHttpRequest();
-    xhr.open("POST", "suscripcion.php", true);
+    xhr.open("POST", "Ajax/ajax.subscribe.php", true);
     xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
     xhr.onreadystatechange = function() {
       if (xhr.readyState === 4 && xhr.status === 200) {
