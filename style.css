@@ -5,6 +5,10 @@ html{
     scroll-behavior: smooth;
 }
 
+.clave {
+  margin-top: -100px;
+}
+
 body {
     background-color: #0081FD;
     margin: 0;
